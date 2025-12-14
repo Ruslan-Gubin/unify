@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Unify
 
-## Getting Started
+Unify — это универсальный инструмент для разработки, который помогает собирать, организовывать и переиспользовать компоненты, хуки, стили и конфигурации в любых проектах. 
 
-First, run the development server:
+Этот проект предназначен для создания единого хранилища, которое облегчает поддержку и масштабирование ваших приложений, ускоряет работу и повышает качество кода.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Что входит в Unify
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Переиспользуемые компоненты
+- Общие хуки и утилиты
+- Стиль и темы
+- Конфигурационные файлы и настройки
+- Все, что может пригодиться в любом проекте
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Почему выбрать Unify?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Упрощает управление компонентами
+- Обеспечивает единый стиль и конфигурацию
+- Быстрое внедрение и масштабирование
+- Повышает эффективность разработки
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

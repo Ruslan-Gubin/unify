@@ -1,0 +1,13 @@
+.navigateLogoContainer {
+  min-height: 120px;
+  width: 100%;
+  background-color: gray;
+}
+
+.navigateMenuNav {
+  padding: var(--padding-content-block);
+  padding-right: calc(var(--padding-content-block) - 11px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}

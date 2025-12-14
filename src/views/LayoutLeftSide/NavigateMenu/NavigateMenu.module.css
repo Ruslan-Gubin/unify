@@ -1,0 +1,78 @@
+.navigateMenuList {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigateMenuItemWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigateMenuItem {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navigateMenuNavChildren {
+  padding-left: 20px;
+
+  .navigateMenuList {
+    border-left: 1px solid lightgrey;
+  }
+
+  .navigateMenuItemActive {
+    border-left: 1px solid #0075f2;
+    transform: translateX(-1px);
+  }
+}
+
+.navigateMenuItemLink {
+  width: 100%;
+  column-gap: var(--border-radius-main);
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+
+.navigateMenuItemLinkActive {
+  color: #0075f2;
+}
+
+.navigateMenuItemSvg {
+  transform: rotate(90deg);
+}
+
+.navigateMenuItemSvgActive {
+  transform: rotate(90deg);
+  animation: rotateBird 0.2s ease 1 forwards;
+}
+
+@keyframes rotateBird {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+.navigateMenuItemBottomSeparator {
+  height: 12px;
+  position: relative;
+}
+
+.navigateMenuItemBottomSeparator::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+}

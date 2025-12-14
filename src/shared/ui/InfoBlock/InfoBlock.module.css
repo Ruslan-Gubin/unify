@@ -1,0 +1,11 @@
+.info__block_article {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-info-block);
+}
+
+.info__block_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--row-gap-content);
+}

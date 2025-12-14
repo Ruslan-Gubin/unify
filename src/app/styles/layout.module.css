@@ -1,0 +1,48 @@
+.layoutWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.layoutAside {
+  min-width: 280px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-side-navigate);
+  border-right: 1px solid lightgray;
+
+  @media (max-width: 880px) {
+    transition: transform 0.3s linear;
+    top: var(--header-size-height); /* 60px */
+    position: fixed;
+    transform: translateX(-100%);
+    z-index: 1;
+  }
+}
+
+.layoutAsideContent {
+  width: 100%;
+  max-width: 1160px;
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--background-content-color);
+}
+
+.layoutHeader {
+  height: var(--header-size-height); /* 60px */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid lightgray;
+  background-color: var(--background-content-color);
+}
+
+.layoutMain {
+  padding: var(--padding-main); /* 32px */
+  background-color: "orange";
+}
