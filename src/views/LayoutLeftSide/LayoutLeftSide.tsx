@@ -30,7 +30,7 @@ export const LayoutLeftSide = () => {
     },
     {
       label: "Style",
-      href: "",
+      href: "/style",
       icon: "",
       children: [
         {
@@ -49,29 +49,29 @@ export const LayoutLeftSide = () => {
     },
     {
       label: "Components",
-      href: "",
+      href: "/components",
       icon: "",
       children: [
         {
           label: "Buttons",
-          href: "",
+          href: "/components/buttons",
           icon: "",
           children: [
             {
               label: "Button v1",
-              href: "/components/button/button_v1",
+              href: "/components/buttons/button_v1",
               icon: "",
               children: [],
             },
             {
               label: "Button v2",
-              href: "/components/button/button_v2",
+              href: "/components/buttons/button_v2",
               icon: "",
               children: [],
             },
             {
               label: "Button v3",
-              href: "/components/button/button_v3",
+              href: "/components/buttons/button_v3",
               icon: "",
               children: [],
             },
@@ -79,7 +79,7 @@ export const LayoutLeftSide = () => {
         },
         {
           label: "Inputs",
-          href: "",
+          href: "/components/inputs",
           icon: "",
           children: [
             {

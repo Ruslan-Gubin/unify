@@ -1,11 +1,11 @@
-import { generateMetadata } from "./core/generateMetadata";
+import type { Metadata } from "next";
 import { Roboto } from "./core/fonts";
-import { type Metadata } from "next";
+import { generateMetadata } from "./core/generateMetadata";
 import "./styles/reset.css";
 import "./styles/globals.css";
-import styles from "./styles/layout.module.css";
 import { Header } from "../views/Header/Header";
 import { LayoutLeftSide } from "../views/LayoutLeftSide/LayoutLeftSide";
+import styles from "./styles/layout.module.css";
 
 export const metadata: Metadata = generateMetadata({
   title: "Ui storage",

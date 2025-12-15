@@ -1,4 +1,4 @@
-import { type Metadata } from "next";
+import type { Metadata } from "next";
 import { generateMetadata } from "../core/generateMetadata";
 
 export const metadata: Metadata = generateMetadata({
@@ -7,9 +7,5 @@ export const metadata: Metadata = generateMetadata({
 });
 
 export default function CommunityPage() {
-  return (
-    <>
-      <h1>Community page</h1>
-    </>
-  );
+  return <h1>Community page</h1>;
 }

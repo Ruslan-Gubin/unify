@@ -1,4 +1,4 @@
-import { type Metadata } from "next";
+import type{  Metadata } from "next";
 import { generateMetadata } from "@/src/app/core/generateMetadata";
 
 export const metadata: Metadata = generateMetadata({
@@ -8,8 +8,6 @@ export const metadata: Metadata = generateMetadata({
 
 export default function ButtonV2Page() {
   return (
-    <>
       <h1>ButtonV2Page</h1>
-    </>
   );
 }
