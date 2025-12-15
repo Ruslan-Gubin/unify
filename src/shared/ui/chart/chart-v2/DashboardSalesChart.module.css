@@ -1,0 +1,90 @@
+.root {
+  padding: 20px;
+  padding-bottom: 39px;
+}
+
+.headerTitle {
+  padding-bottom: 20px;
+}
+
+.optionsDescription {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 83;
+  z-index: 3;
+}
+
+.optionsDescriptionTitle {
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+
+.optionsCompleteText {
+  text-align: center;
+  color: #9095a0;
+  font-size: 16;
+  padding-bottom: 17px;
+}
+
+.optionsFooterLine {
+  margin: 0 auto;
+  display: flex;
+  font-size: 20px;
+}
+
+.optionsFooterLineSum {
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+.optionsFooterLineTotal {
+  font-weight: 400;
+  color: #9095a0;
+}
+
+.content {
+  position: relative;
+  width: 413px;
+  aspect-ratio: 2/1;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #a6f5ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.1s linear;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    background-color: #47c0bb;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+
+.circleWhite {
+  background-color: white;
+  border-radius: 50%;
+  width: 75%;
+  height: 150%;
+  position: absolute;
+  left: 12.5%;
+  z-index: 2;
+  top: 25%;
+}

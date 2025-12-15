@@ -103,6 +103,19 @@ export const LayoutLeftSide = () => {
           ],
         },
         {
+          label: "Charts",
+          href: "/components/charts",
+          icon: "",
+          children: [
+            {
+              label: "Chart circle",
+              href: "/components/charts/chart_circle",
+              icon: "",
+              children: [],
+            },
+          ],
+        },
+        {
           label: "Navigate menu",
           href: "/components/navigate-menu",
           icon: "",
