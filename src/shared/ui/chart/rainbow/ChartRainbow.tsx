@@ -1,9 +1,6 @@
 "use client";
-import { useCountUp } from "../chard-circle/useCountUp";
-// import { DashboardChartCard } from "../dashboard-chart-card/DashboardChartCard";
-// import { DashboardChartTitle } from "../dashboard-chart-title/DashboardChartTitle";
-
-import styles from "./DashboardSalesChart.module.css";
+import { useCountUp } from "@/src/shared/hooks/useCountUp";
+import styles from "./ChartRainbow.module.css";
 
 type Props = {
   title: string;
@@ -14,7 +11,7 @@ type Props = {
 
 const getAngle = (percent: number) => (percent * 180) / 100;
 
-const DashboardSalesChart = ({ percent, sum, total, title }: Props) => {
+const ChartRainbow = ({ percent, sum, total, title }: Props) => {
   const { count } = useCountUp({ startCount: 0, endCount: percent });
 
   return (
@@ -37,4 +34,4 @@ const DashboardSalesChart = ({ percent, sum, total, title }: Props) => {
   );
 };
 
-export { DashboardSalesChart };
+export { ChartRainbow };

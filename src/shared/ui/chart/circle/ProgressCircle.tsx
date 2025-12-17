@@ -1,31 +1,29 @@
-'use client'
+"use client";
 import { useCallback, useEffect, useState } from "react";
-import styles from "./ChartCircle.module.css";
-import { useCountUp } from "./useCountUp";
+import { useCountUp } from "@/src/shared/hooks/useCountUp";
+import styles from "./ProgressCircle.module.css";
 
 type Props = {
   className?: string;
   sections: { color: string; percent: number }[];
-  showText?: boolean;
   percent: number;
   timeAnimation?: number;
 };
 
-const ChartCircle = ({
+const ProgressCircle = ({
   className,
   sections,
-  showText,
   percent,
   timeAnimation = 1000,
 }: Props) => {
   const { count } = useCountUp({
-    startCount: 0,
     endCount: percent,
     timeAnimation,
   });
-  const [gradient, setGradient] = useState<string>("");
 
-  const getInitGradientStr = useCallback(() => {
+  const getInitGradientStr = (
+    sections: { color: string; percent: number }[],
+  ) => {
     return sections.reduce(
       (acc, section, index) =>
         acc +
@@ -33,7 +31,11 @@ const ChartCircle = ({
         (index === sections.length - 1 ? "" : ","),
       "",
     );
-  }, [sections]);
+  };
+
+  const [gradient, setGradient] = useState<string>(
+    () => `${getInitGradientStr(sections)}`,
+  );
 
   const getGradientString = useCallback(() => {
     if (gradient.length === 0) return;
@@ -62,21 +64,18 @@ const ChartCircle = ({
   }, [gradient, sections]);
 
   useEffect(() => {
-    if (gradient.length === 0) {
-      return setGradient(`${getInitGradientStr()}`);
-    }
     const animate = requestAnimationFrame(getGradientString);
     return () => cancelAnimationFrame(animate);
-  }, [getInitGradientStr, getGradientString, gradient.length]);
+  }, [getGradientString]);
 
   return (
     <div
       style={{ backgroundImage: `conic-gradient(${gradient}, #00000007 0%)` }}
       className={`${styles.circle} ${className}`}
     >
-      {showText && <h3 className={styles.percentText}>{count}%</h3>}
+      {percent && <h3 className={styles.percentText}>{count}%</h3>}
     </div>
   );
 };
 
-export { ChartCircle };
+export { ProgressCircle };

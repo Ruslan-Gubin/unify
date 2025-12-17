@@ -1,9 +1,9 @@
+import type { ReactNode } from "react";
+import styles from "./LayoutLeftSide.module.css";
 import { NavigateMenu } from "./NavigateMenu/NavigateMenu";
+import { CommunityIcon } from "./svg/Community/CommunityIcon";
 import { HomeIcon } from "./svg/Home/HomeIcon";
 import { LayoutIcon } from "./svg/Layout/LayoutIcon";
-import { CommunityIcon } from "./svg/Community/CommunityIcon";
-import styles from "./LayoutLeftSide.module.css";
-import type { ReactNode } from "react";
 
 export type NavigateListItem = {
   label: string;
@@ -108,8 +108,14 @@ export const LayoutLeftSide = () => {
           icon: "",
           children: [
             {
-              label: "Chart circle",
-              href: "/components/charts/chart_circle",
+              label: "Circle",
+              href: "/components/charts/circle",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Rainbow",
+              href: "/components/charts/rainbow",
               icon: "",
               children: [],
             },
@@ -118,6 +124,19 @@ export const LayoutLeftSide = () => {
         {
           label: "Navigate menu",
           href: "/components/navigate-menu",
+          icon: "",
+          children: [],
+        },
+      ],
+    },
+    {
+      label: "Hooks",
+      href: "/hooks",
+      icon: "",
+      children: [
+        {
+          label: "useCountUp",
+          href: "/hooks/useCountUp",
           icon: "",
           children: [],
         },
