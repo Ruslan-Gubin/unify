@@ -7,7 +7,7 @@ type Props = {
   timeAnimation?: number;
 };
 
-const useCountUp = ({
+const useAnimatedCounter = ({
   endCount,
   startCount = 0,
   timeAnimation = 1000,
@@ -50,4 +50,4 @@ const useCountUp = ({
   return { count, isEndAnimated };
 };
 
-export { useCountUp };
+export { useAnimatedCounter };

@@ -21,7 +21,7 @@ export default async function ChartsCirclePage() {
   );
 
   const hookUseCountUp = await readContentFile(
-    "src/shared/hooks/useCountUp.ts",
+    "src/shared/hooks/useAnimatedCounter.ts",
   );
 
   return (
@@ -56,7 +56,7 @@ export default async function ChartsCirclePage() {
       <ul style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
         <li>
           <ProgressCircle
-            timeAnimation={1500}
+            timeAnimation={800}
             sections={[
               { color: "#20b2aa", percent: 12 },
               { color: "#1079f2", percent: 44 },
@@ -70,7 +70,7 @@ export default async function ChartsCirclePage() {
         </li>
         <li>
           <ProgressCircle
-            timeAnimation={1000}
+            timeAnimation={800}
             sections={[
               { color: "#4cb872", percent: 12 },
               { color: "#6cd08f", percent: 50 },
@@ -82,10 +82,10 @@ export default async function ChartsCirclePage() {
         </li>
         <li>
           <ProgressCircle
-            timeAnimation={1200}
-            sections={[{ color: "#20b2aa", percent: 85 }]}
+            timeAnimation={800}
+            sections={[{ color: "#20b2aa", percent: 86 }]}
             className={styles.chartCircle}
-            percent={85}
+            percent={86}
           />
         </li>
       </ul>
@@ -106,8 +106,8 @@ export default async function ChartsCirclePage() {
       )}
       {typeof hookUseCountUp === "string" && (
         <CodeWrapper
-          description="Этот хук useCountUp плавно увеличивает число от startCount до endCount за заданное время (timeAnimation). Он автоматически обновляет число с адаптивной скоростью, создавая эффект счетчика, который анимированно поднимается до целевого значения."
-          fileName="useCountUp.ts"
+          description="Этот хук useAnimatedCounter плавно увеличивает число от startCount до endCount за заданное время (timeAnimation). Он автоматически обновляет число с адаптивной скоростью, создавая эффект счетчика, который анимированно поднимается до целевого значения."
+          fileName="useAnimatedCounter.ts"
           title="Hook"
           code={hookUseCountUp}
         />

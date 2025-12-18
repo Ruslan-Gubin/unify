@@ -5,19 +5,19 @@ import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Hook useCountUp Page",
-  description: "Hook useCountUp Page description",
+  title: "Hook useAnimatedCounter Page",
+  description: "Hook useAnimatedCounter Page description",
 });
 
 export default async function hookUseCountUpPage() {
-  const hookUseCountUp = await readContentFile(
-    "src/shared/hooks/useCountUp.ts",
+  const hookUseAnimatedCounter = await readContentFile(
+    "src/shared/hooks/useAnimatedCounter.ts",
   );
 
 
   return (
     <article className="article__page">
-      <h1>{'useCountUp'}</h1>
+      <h1>{'useAnimatedCounter'}</h1>
       <InfoBlock
         title="Параметры"
         infoList={[
@@ -36,12 +36,12 @@ export default async function hookUseCountUpPage() {
         ]}
       />
 
-      {typeof hookUseCountUp === "string" && (
+      {typeof hookUseAnimatedCounter === "string" && (
         <CodeWrapper
-          description="Этот хук useCountUp плавно увеличивает число от startCount до endCount за заданное время (timeAnimation). Он автоматически обновляет число с адаптивной скоростью, создавая эффект счетчика, который анимированно поднимается до целевого значения."
-          fileName="useCountUp.ts"
+          description="Этот хук useAnimatedCounter плавно увеличивает число от startCount до endCount за заданное время (timeAnimation). Он автоматически обновляет число с адаптивной скоростью, создавая эффект счетчика, который анимированно поднимается до целевого значения."
+          fileName="useAnimatedCounter.ts"
           title="Hook"
-          code={hookUseCountUp}
+          code={hookUseAnimatedCounter}
         />
       )}
     </article>

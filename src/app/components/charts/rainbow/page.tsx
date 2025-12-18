@@ -19,8 +19,8 @@ export default async function ChartsCirclePage() {
     "src/shared/ui/chart/rainbow/ChartRainbow.module.css",
   );
 
-  const hookUseCountUp = await readContentFile(
-    "src/shared/hooks/useCountUp.ts",
+  const hookUseAnimatedCounter = await readContentFile(
+    "src/shared/hooks/useAnimatedCounter.ts",
   );
 
   return (
@@ -65,12 +65,12 @@ export default async function ChartsCirclePage() {
           code={ChartRainbowCss}
         />
       )}
-      {typeof hookUseCountUp === "string" && (
+      {typeof hookUseAnimatedCounter === "string" && (
         <CodeWrapper
-          description="Этот хук useCountUp плавно увеличивает число от startCount до endCount за заданное время (timeAnimation). Он автоматически обновляет число с адаптивной скоростью, создавая эффект счетчика, который анимированно поднимается до целевого значения."
-          fileName="useCountUp.ts"
+          description="Этот хук useAnimatedCounter плавно увеличивает число от startCount до endCount за заданное время (timeAnimation). Он автоматически обновляет число с адаптивной скоростью, создавая эффект счетчика, который анимированно поднимается до целевого значения."
+          fileName="useAnimatedCounter.ts"
           title="Hook"
-          code={hookUseCountUp}
+          code={hookUseAnimatedCounter}
         />
       )}
     </article>

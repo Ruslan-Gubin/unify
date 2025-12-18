@@ -135,8 +135,8 @@ export const LayoutLeftSide = () => {
       icon: "",
       children: [
         {
-          label: "useCountUp",
-          href: "/hooks/useCountUp",
+          label: "useAnimatedCounter",
+          href: "/hooks/useAnimatedCounter",
           icon: "",
           children: [],
         },

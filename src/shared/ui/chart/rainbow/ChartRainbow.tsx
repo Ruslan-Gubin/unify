@@ -1,5 +1,5 @@
 "use client";
-import { useCountUp } from "@/src/shared/hooks/useCountUp";
+import { useAnimatedCounter } from "@/src/shared/hooks/useAnimatedCounter";
 import styles from "./ChartRainbow.module.css";
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 const getAngle = (percent: number) => (percent * 180) / 100;
 
 const ChartRainbow = ({ percent, sum, total, title }: Props) => {
-  const { count } = useCountUp({ startCount: 0, endCount: percent });
+  const { count } = useAnimatedCounter({ startCount: 0, endCount: percent });
 
   return (
     <div className={styles.content}>

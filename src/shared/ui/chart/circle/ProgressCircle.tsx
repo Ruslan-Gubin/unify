@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
-import { useCountUp } from "@/src/shared/hooks/useCountUp";
+import { useAnimatedCounter } from "@/src/shared/hooks/useAnimatedCounter";
 import styles from "./ProgressCircle.module.css";
 
 type Props = {
@@ -16,7 +16,7 @@ const ProgressCircle = ({
   percent,
   timeAnimation = 1000,
 }: Props) => {
-  const { count } = useCountUp({
+  const { count } = useAnimatedCounter({
     endCount: percent,
     timeAnimation,
   });
