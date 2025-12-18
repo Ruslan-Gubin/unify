@@ -29,20 +29,20 @@ const useCountUp = ({
   const tick = timeAnimation / (endCount / getUpdateNextCount(endCount));
 
   useEffect(() => {
+    if (isEndAnimated || !endCount) return;
+
+
     const changeCount = () => {
       const nextCount = count + updateNextCount;
       const updateCount = nextCount >= endCount ? endCount : nextCount;
       setCount(updateCount);
+
+      if (updateCount >= endCount) {
+        setIsEndAnimated(true);
+      }
     };
 
     const timer = setTimeout(changeCount, tick);
-
-    if (count >= endCount || isEndAnimated || !endCount) {
-      return () => {
-        setIsEndAnimated(true);
-        clearTimeout(timer);
-      };
-    }
 
     return () => clearTimeout(timer);
   }, [count, endCount, isEndAnimated, updateNextCount, tick]);

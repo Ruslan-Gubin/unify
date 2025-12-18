@@ -14,6 +14,7 @@ export default async function hookUseCountUpPage() {
     "src/shared/hooks/useCountUp.ts",
   );
 
+
   return (
     <article className="article__page">
       <h1>{'useCountUp'}</h1>
