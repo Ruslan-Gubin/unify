@@ -58,11 +58,11 @@ export default async function ChartsCirclePage() {
           <ProgressCircle
             timeAnimation={800}
             sections={[
-              { color: "#20b2aa", percent: 12 },
-              { color: "#1079f2", percent: 44 },
-              { color: "#4db71f", percent: 70 },
-              { color: "#e364c7", percent: 96 },
-              { color: "#ee6868", percent: 100 },
+              { color: "#20b2aa", percent: 20 },
+              { color: "#A6F5FF", percent: 40 },
+              { color: "#61EDFF", percent: 60 },
+              { color: "#1CE5FF", percent: 80 },
+              { color: "#0095A9", percent: 100 },
             ]}
             className={styles.chartCircle}
             percent={100}
@@ -72,9 +72,21 @@ export default async function ChartsCirclePage() {
           <ProgressCircle
             timeAnimation={800}
             sections={[
-              { color: "#4cb872", percent: 12 },
-              { color: "#6cd08f", percent: 50 },
-              { color: "#a4f4c0", percent: 70 },
+              { color: "#20b2aa", percent: 20 },
+              { color: "#A6F5FF", percent: 40 },
+              { color: "#61EDFF", percent: 60 },
+              { color: "#1CE5FF", percent: 80 },
+              { color: "#0095A9", percent: 100 },
+            ]}
+            className={styles.chartCircle}
+          />
+        </li>
+        <li>
+          <ProgressCircle
+            timeAnimation={800}
+            sections={[
+              { color: "#47C0BB", percent: 60 },
+              { color: "#A6F5FF", percent: 100 },
             ]}
             className={styles.chartCircle}
             percent={70}
@@ -83,7 +95,10 @@ export default async function ChartsCirclePage() {
         <li>
           <ProgressCircle
             timeAnimation={800}
-            sections={[{ color: "#20b2aa", percent: 86 }]}
+            sections={[
+              { color: "#20b2aa", percent: 86 },
+              { color: "#A6F5FF", percent: 100 },
+            ]}
             className={styles.chartCircle}
             percent={86}
           />

@@ -1,0 +1,21 @@
+.root {
+  background-color: transparent;
+  width: 700px;
+  height: 189px;
+  padding-top: 11px;
+
+  @media (max-width: 1220px) {
+    max-width: 600px;
+    min-width: 600px;
+  }
+
+  @media (max-width: 1050px) {
+    max-width: 600px;
+    min-width: 600px;
+  }
+
+  @media (max-width: 360px) {
+    max-width: 290px;
+    min-width: 290px;
+  }
+}

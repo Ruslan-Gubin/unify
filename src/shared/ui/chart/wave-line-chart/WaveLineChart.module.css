@@ -1,0 +1,106 @@
+.root {
+  padding: 20px;
+  padding-bottom: 33px;
+}
+
+.rootWrapper {
+  background-color: #fff;
+  border: 1px solid #dee1e6;
+  color: #21272a;
+  font-weight: 400;
+  box-shadow: 0 0 2px rgb(23 26 31 / 12%), 0 0 1px rgb(23 26 31 / 7%);
+  border-radius: 4px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 57px;
+}
+
+
+.switchButtons {
+  position: relative;
+  top: 10px;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 6%);
+  min-width: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 20px;
+}
+
+.linesList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px 39px;
+  justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
+  padding-bottom: 2px;
+
+  @media (max-width: 1220px) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 1050px) {
+    column-gap: 20px;
+  }
+}
+
+.linesItem {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+
+  @media (max-width: 1050px) {
+    column-gap: 4px;
+  }
+}
+
+.lineColor {
+  border-radius: 50%;
+  min-height: 12px;
+  min-width: 12px;
+
+  @media (max-width: 1050px) {
+    min-height: 12px;
+    min-width: 12px;
+  }
+}
+
+.linesLabel {
+  font-size: 14px;
+}
+
+.graphContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.countList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  color: #9095a0;
+  min-width: 63px;
+  justify-content: space-between;
+
+  @media (max-width: 1220px) {
+    min-width: 80px;
+  }
+
+  @media (max-width: 1050px) {
+    min-width: 80px;
+  }
+}
+
+.countListItem {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

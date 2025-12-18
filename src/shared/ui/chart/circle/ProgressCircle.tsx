@@ -6,7 +6,7 @@ import styles from "./ProgressCircle.module.css";
 type Props = {
   className?: string;
   sections: { color: string; percent: number }[];
-  percent: number;
+  percent?: number;
   timeAnimation?: number;
 };
 
@@ -17,7 +17,7 @@ const ProgressCircle = ({
   timeAnimation = 1000,
 }: Props) => {
   const { count } = useAnimatedCounter({
-    endCount: percent,
+    endCount: percent ? percent : 100,
     timeAnimation,
   });
 

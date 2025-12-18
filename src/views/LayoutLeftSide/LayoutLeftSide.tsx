@@ -119,6 +119,12 @@ export const LayoutLeftSide = () => {
               icon: "",
               children: [],
             },
+            {
+              label: "Wave Line",
+              href: "/components/charts/wave-line-chart",
+              icon: "",
+              children: [],
+            },
           ],
         },
         {
@@ -139,6 +145,62 @@ export const LayoutLeftSide = () => {
           href: "/hooks/useAnimatedCounter",
           icon: "",
           children: [],
+        },
+        {
+          label: "useWindowSize",
+          href: "/hooks/useWindowSize",
+          icon: "",
+          children: [],
+        },
+      ],
+    },
+    {
+      label: "Services",
+      href: "/services",
+      icon: "",
+      children: [
+        {
+          label: "Canvas",
+          href: "/services/canvas",
+          icon: "",
+          children: [
+            {
+              label: "Types",
+              href: "/services/canvas/types",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Canvas Draw",
+              href: "/services/canvas/canvas-draw",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Canvas Draw Graph",
+              href: "/services/canvas/canvas-draw-graph",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Canvas Services",
+              href: "/services/canvas/draw-service",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Draw Line chart",
+              href: "/services/canvas/line-chart",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Pie chart draw",
+              href: "/services/canvas/pie-chart-draw",
+              icon: "",
+              children: [],
+            },
+          ],
         },
       ],
     },
