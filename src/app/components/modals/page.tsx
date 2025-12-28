@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { generateMetadata } from "@/src/app/core/generateMetadata";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Input v1",
-  description: "Input v1 description",
+  title: "Modals",
+  description: "Modal description",
 });
 
-export default function InputV1Page() {
-  return <h1>Input 1</h1>;
+export default function ModalPage() {
+  return <h1>Modals</h1>;
 }
+

@@ -43,7 +43,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --background-body: #0a0a0a; */
     --text-color-main: #ededed;
     --background-side-navigate: grey;
     --background-pre-block: #1a1b26;
@@ -67,7 +66,6 @@ body {
 }
 
 .dark {
-  /* --background-body: #0a0a0a; */
   --background-side-navigate: grey;
   --background-content-color: #0a0a0a;
   --text-color-main: #f6f6f6;

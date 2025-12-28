@@ -23,7 +23,6 @@ export default async function ButtonV1Page() {
   return (
     <article className="article__page">
       <h1>Button v1</h1>
-
       <InfoBlock
         title="Цвета"
         infoList={[

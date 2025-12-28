@@ -103,6 +103,19 @@ export const LayoutLeftSide = () => {
           ],
         },
         {
+          label: "Modals",
+          href: "/components/modals",
+          icon: "",
+          children: [
+            {
+              label: "Modal v1",
+              href: "/components/modals/modal_v1",
+              icon: "",
+              children: [],
+            },
+          ],
+        },
+        {
           label: "Charts",
           href: "/components/charts",
           icon: "",
