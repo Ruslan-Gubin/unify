@@ -40,6 +40,9 @@ export default async function ButtonV1Page() {
           alignItems: "center",
         }}
       >
+        <Button variantColor="teal" disabled>
+          teal
+        </Button>
         <Button variantColor="teal">teal</Button>
         <Button variantColor="error">error</Button>
         <Button variantColor="green">green</Button>

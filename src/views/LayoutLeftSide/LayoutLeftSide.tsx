@@ -116,6 +116,19 @@ export const LayoutLeftSide = () => {
           ],
         },
         {
+          label: "Tables",
+          href: "/components/tables",
+          icon: "",
+          children: [
+            {
+              label: "LoadMoreObserver",
+              href: "/components/tables/load-more-observer",
+              icon: "",
+              children: [],
+            },
+          ],
+        },
+        {
           label: "Charts",
           href: "/components/charts",
           icon: "",
@@ -162,6 +175,12 @@ export const LayoutLeftSide = () => {
         {
           label: "useWindowSize",
           href: "/hooks/useWindowSize",
+          icon: "",
+          children: [],
+        },
+        {
+          label: "useIntersectionObserver",
+          href: "/hooks/useIntersectionObserver",
           icon: "",
           children: [],
         },
