@@ -63,18 +63,6 @@ export const LayoutLeftSide = () => {
               icon: "",
               children: [],
             },
-            {
-              label: "Button v2",
-              href: "/components/buttons/button_v2",
-              icon: "",
-              children: [],
-            },
-            {
-              label: "Button v3",
-              href: "/components/buttons/button_v3",
-              icon: "",
-              children: [],
-            },
           ],
         },
         {
@@ -83,20 +71,8 @@ export const LayoutLeftSide = () => {
           icon: "",
           children: [
             {
-              label: "Input v1",
-              href: "/components/inputs/input_v1",
-              icon: "",
-              children: [],
-            },
-            {
-              label: "Input v2",
-              href: "/components/inputs/input_v2",
-              icon: "",
-              children: [],
-            },
-            {
-              label: "Input v3",
-              href: "/components/inputs/input_v3",
+              label: "Input search",
+              href: "/components/inputs/input_search",
               icon: "",
               children: [],
             },
@@ -181,6 +157,12 @@ export const LayoutLeftSide = () => {
         {
           label: "useIntersectionObserver",
           href: "/hooks/useIntersectionObserver",
+          icon: "",
+          children: [],
+        },
+        {
+          label: "useDebounce",
+          href: "/hooks/useDebounce",
           icon: "",
           children: [],
         },

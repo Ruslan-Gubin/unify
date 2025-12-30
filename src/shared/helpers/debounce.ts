@@ -1,13 +1,13 @@
-export function debounce<T extends (...args: any[]) => void>(
+export const debounce = <T extends (...args: unknown[]) => void>(
   func: T,
   timeout: number = 400,
-) {
-  let timer: NodeJS.Timeout;
+) => {
+  let timer: ReturnType<typeof setTimeout>;
+
   return (...args: Parameters<T>) => {
     clearTimeout(timer);
     timer = setTimeout(() => {
-      //@ts-ignore
-      func.apply(this, args);
+      func(...args);
     }, timeout);
   };
-}
+};

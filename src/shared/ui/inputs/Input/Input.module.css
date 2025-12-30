@@ -1,0 +1,36 @@
+.wrapper {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-inline: 12px;
+  border-bottom: 1px solid #cecece;
+  position: relative;
+
+  &:focus-within {
+    border-bottom-color: #757575;
+  }
+
+  @media (max-width: 500px) {
+    background-color: orange;
+    height: 40px;
+    font-size: 14px;
+    column-gap: 4px;
+  }
+}
+
+.input {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #cecece;
+}
+
+.solid {
+  border-color: orange;
+}
+.xl {
+  height: 56px;
+}
