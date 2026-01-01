@@ -1,0 +1,271 @@
+.label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: text;
+  color: #cecece;
+  padding-inline: 8px;
+  transform: translateY(-50%);
+  max-width: 95%;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+
+  @media (max-width: 500px) {
+    padding-inline: 6px;
+    max-width: 90%;
+  }
+}
+
+.error {
+  position: absolute;
+  left: 0;
+  padding-inline: 8px;
+  transform: translateY(-50%);
+  top: 0;
+  cursor: default;
+  color: #d32f2f;
+  font-size: 0.75em;
+  max-width: 95%;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+
+  @media (max-width: 500px) {
+    padding-inline: 6px;
+    max-width: 90%;
+  }
+}
+
+.labelActive {
+  top: 0%;
+  color: #171717;
+  font-size: 0.75em;
+  background-color: white;
+  cursor: default;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom-color: blue;
+}
+
+.inputWrapper {
+  flex: 1 1 auto;
+  height: 100%;
+  position: relative;
+  padding-inline: 8px;
+
+  @media (max-width: 500px) {
+    padding-inline: 6px;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+}
+
+.input::placeholder {
+  color: #cecece;
+}
+
+.standard {
+  border-bottom: 1px solid #cecece;
+
+  &:focus-within {
+    border-color: #757575;
+
+    & .label {
+      animation: label-animate-filled ease-out 0.2s 1 forwards;
+    }
+
+    & .labelActive {
+      animation: label-animate-filled ease-out 0s 1 forwards;
+    }
+  }
+
+  & .labelActive {
+    background-color: transparent;
+  }
+}
+
+.outlined {
+  border-radius: 4px;
+  padding-inline: 8px;
+  border: 1px solid #cecece;
+
+  &:focus-within {
+    border-color: #757575;
+
+    & .label {
+      animation: label-animate linear 0.2s 1 forwards;
+    }
+
+    & .labelActive {
+      animation: label-animate linear 0s 1 forwards;
+    }
+  }
+
+  & .labelActive {
+    background-color: white;
+  }
+
+  & .error {
+    background-color: white;
+  }
+}
+
+@keyframes label-animate {
+  0% {
+    top: 50%;
+    color: #cecece;
+  }
+
+  100% {
+    top: 0%;
+    color: #171717;
+    font-size: 0.75em;
+    background-color: white;
+    cursor: default;
+  }
+}
+
+.filled {
+  background-color: #fafafa;
+  padding-inline: 8px;
+  border-bottom: 1px solid #cecece;
+
+  & .input {
+    background-color: #fafafa;
+  }
+
+  &:focus-within {
+    border-color: #757575;
+    & .label {
+      animation: label-animate-filled linear 0.2s 1 forwards;
+    }
+
+    & .labelActive {
+      animation: label-animate-filled linear 0s 1 forwards;
+    }
+  }
+
+  & .labelActive {
+    background-color: transparent;
+  }
+
+  @media (max-width: 500px) {
+    padding-inline: 6px;
+  }
+}
+
+@keyframes label-animate-filled {
+  0% {
+    top: 50%;
+    color: #cecece;
+  }
+
+  100% {
+    top: 0;
+    color: #171717;
+    font-size: 0.75em;
+    background-color: transparent;
+    cursor: default;
+  }
+}
+
+.buttonRight {
+  display: flex;
+  align-items: center;
+}
+
+.xs {
+  height: 24px;
+  padding-inline: 4px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  font-size: 12px;
+}
+
+.sm {
+  height: 32px;
+  font-size: 14px;
+  padding-inline: 6px;
+
+  @media (max-width: 880px) {
+    font-size: 12px;
+    height: 28px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding-inline: 4px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.md {
+  height: 40px;
+  font-size: 16px;
+
+  @media (max-width: 880px) {
+    font-size: 14px;
+    height: 36px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding-inline: 6px;
+    font-size: 12px;
+    height: 32px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.lg {
+  font-size: 18px;
+  height: 55px;
+
+  @media (max-width: 880px) {
+    font-size: 16px;
+    height: 36px;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+    height: 32px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

@@ -71,8 +71,8 @@ export const LayoutLeftSide = () => {
           icon: "",
           children: [
             {
-              label: "Input search",
-              href: "/components/inputs/input_search",
+              label: "Input v1",
+              href: "/components/inputs/input_v1",
               icon: "",
               children: [],
             },
