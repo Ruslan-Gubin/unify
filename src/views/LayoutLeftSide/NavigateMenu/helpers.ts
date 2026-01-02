@@ -25,16 +25,17 @@ export const findRecursiveActiveHref = (
   return false;
 };
 
-export const getInitSelectMap = (
+export const getInitSelect = (
   navigateList: NavigateListItem[],
   pathname: string,
-): Map<string, boolean> => {
-  const selectMap = new Map();
+): string => {
+  let activeHref = "";
 
   for (let i = 0; i < navigateList.length; i++) {
     const element = navigateList[i];
 
-    if (element.href === pathname) {
+    if (element.href === pathname && element.children.length > 0) {
+      activeHref = element.href;
       break;
     }
 
@@ -45,11 +46,11 @@ export const getInitSelectMap = (
       );
 
       if (findActiveHref) {
-        selectMap.set(element.label, true);
+        activeHref = element.href;
         break;
       }
     }
   }
 
-  return selectMap;
+  return activeHref;
 };

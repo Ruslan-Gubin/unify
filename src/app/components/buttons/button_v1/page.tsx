@@ -47,6 +47,7 @@ export default async function ButtonV1Page() {
         <Button variantColor="error">error</Button>
         <Button variantColor="green">green</Button>
         <Button variantColor="pink">pink</Button>
+        <Button variantColor="blue">blue</Button>
         <Button>default</Button>
       </div>
 
@@ -72,7 +73,7 @@ export default async function ButtonV1Page() {
         </Button>
         <Button variant="outline">outline</Button>
         <Button variant="ghost">ghost</Button>
-        <Button variantColor="teal" variant="link">
+        <Button variantColor="blue" variant="link">
           link
         </Button>
       </div>
@@ -137,7 +138,7 @@ export default async function ButtonV1Page() {
           <EmailIcon />
           sm/link/green
         </Button>
-        <Button size="xs" variant="link" variantColor="pink">
+        <Button size="xs" variant="link" variantColor="blue">
           xs/link/pink
         </Button>
       </div>

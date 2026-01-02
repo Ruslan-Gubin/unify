@@ -14,7 +14,6 @@ export const ModalWrapper = () => {
         active={open}
         handleClose={() => setOpen(false)}
         classContainer={styles.modalContent}
-
       >
         <h3>Are you sure you want to cancel this request?</h3>
         <p>Please do not close this page</p>
@@ -22,7 +21,7 @@ export const ModalWrapper = () => {
           <Button variantColor="teal" fullWidth>
             Yes
           </Button>
-          <Button variantColor="error" fullWidth>
+          <Button onClick={() => setOpen(false)} variantColor="error" fullWidth>
             No
           </Button>
         </footer>

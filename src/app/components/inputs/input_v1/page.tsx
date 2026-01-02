@@ -31,7 +31,7 @@ export default async function InputV1Page() {
           },
           {
             label: "placeholder",
-            value: "Текст-заполнитель (плейсхолдер) для поля ввода.",
+            value: "Текст-заполнитель для поля ввода.",
           },
           {
             label: "fullWidth",

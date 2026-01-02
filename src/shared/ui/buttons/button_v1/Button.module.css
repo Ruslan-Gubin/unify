@@ -343,3 +343,47 @@
     }
   }
 }
+
+.blue {
+  background-color: #0075f2;
+  color: white;
+
+  &:hover {
+    background-color: #056fe1;
+  }
+
+  &:hover:disabled {
+    background-color: #0075f2;
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: 1px solid #0075f2;
+    color: #0075f2;
+
+    &:hover {
+      border: 1px solid #056fe1;
+      color: #056fe1;
+    }
+  }
+
+  &.ghost {
+    background-color: transparent;
+    color: #0075f2;
+
+    &:hover {
+      color: #056fe1;
+      background-color: #f2f7fd;
+    }
+  }
+
+  &.link {
+    background-color: transparent;
+    color: #0075f2;
+
+    &:hover {
+      text-decoration: underline;
+      color: #056fe1;
+    }
+  }
+}

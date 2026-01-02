@@ -18,8 +18,15 @@
   font-size: 14px;
 }
 
+.navigateMenuItemActive {
+  transform: translateX(-1px);
+}
+
 .navigateMenuNavChildren {
   padding-left: 20px;
+  animation: openMenuAnimation 0.2s linear 0s 1 forwards;
+  overflow: hidden;
+  interpolate-size: allow-keywords;
 
   .navigateMenuList {
     border-left: 1px solid lightgrey;
@@ -28,6 +35,16 @@
   .navigateMenuItemActive {
     border-left: 1px solid #0075f2;
     transform: translateX(-1px);
+  }
+}
+
+@keyframes openMenuAnimation {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: auto;
   }
 }
 
@@ -56,6 +73,7 @@
   0% {
     transform: rotate(90deg);
   }
+
   100% {
     transform: rotate(-90deg);
   }
