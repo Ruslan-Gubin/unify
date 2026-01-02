@@ -16,7 +16,6 @@ export const NavigateMenu = (props: Props) => {
   const pathname = usePathname();
   const [selected, setSelected] = useState<string[]>([]);
   const [prevPathname, setPrevPathname] = useState<string | null>(null);
-  console.log(selected);
 
   const handleClickSelect = (href: string, pathname: string) => {
     const isSelect = selected.includes(href);

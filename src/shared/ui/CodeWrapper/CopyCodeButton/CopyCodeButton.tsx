@@ -28,7 +28,7 @@ export const CopyCodeButton = (props: Props) => {
     const node = svgRef.current;
 
     const callbackEndAnimated = () =>
-      node && node.classList.remove(styles.activeCopySvg);
+      node.classList.remove(styles.activeCopySvg);
 
     node.addEventListener("animationend", callbackEndAnimated);
 
@@ -40,7 +40,7 @@ export const CopyCodeButton = (props: Props) => {
   }, []);
 
   return (
-    <button>
+    <button title="copy code" type="button">
       <CopyIcon ref={svgRef} onClick={handleCopyText} />
     </button>
   );
