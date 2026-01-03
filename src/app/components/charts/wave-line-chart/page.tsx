@@ -6,8 +6,16 @@ import { WaveLineChart } from "@/src/shared/ui/chart/wave-line-chart/WaveLineCha
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Wave Line Chart Page",
-  description: "Wave Line Chart Page description",
+"title": "График волновой линии - My UI Kit",
+    "description": "Документация по графику волновой линии в My UI Kit. Узнайте, как создавать и настраивать анимированные волновые линии для визуализации данных.",
+    "keywords": [
+        "график волновой линии",
+        "анимация",
+        "визуализация данных",
+        "Canvas",
+        "HTML5",
+        "документация"
+    ]
 });
 
 export default async function WaveLineChartPage() {

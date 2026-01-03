@@ -4,8 +4,10 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Services Page",
-  description: "Components Page description",
+  title: "Сервисы - My UI Kit",
+  description:
+    "Документация по сервисам в My UI Kit. Узнайте, как использовать встроенные сервисы для работы с API, хранилищем и другими внешними системами.",
+  keywords: ['сервисы', 'API', 'хранилище','внешние системы', 'документация'],
 });
 
 export default function ServicesPage() {

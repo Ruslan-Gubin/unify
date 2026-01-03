@@ -5,8 +5,15 @@ import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Hook useIntersectionObserver Page",
-  description: "Hook useIntersectionObserver Page description",
+  "title": "Хук useIntersectionObserver - My UI Kit",
+    "description": "Документация по хуку useIntersectionObserver в My UI Kit. Узнайте, как отслеживать пересечение элементов с областью просмотра.",
+    "keywords": [
+        "хук",
+        "useIntersectionObserver",
+        "Intersection Observer",
+        "пересечение",
+        "документация"
+    ]
 });
 
 export default async function UseIntersectionObserverPage() {

@@ -4,8 +4,9 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Styles Page",
-  description: "Styles Page description",
+  title: "Стили - My UI Kit",
+  description: "Просмотр и настройка стилей компонентов в My UI Kit",
+  keywords: ["UI Kit", "стили", "компоненты", "дизайн"],
 });
 
 export default function StylesPage() {

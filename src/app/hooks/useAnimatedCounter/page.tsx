@@ -5,8 +5,15 @@ import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Hook useAnimatedCounter Page",
-  description: "Hook useAnimatedCounter Page description",
+ "title": "Хук useCountUp - My UI Kit",
+    "description": "Документация по хуку useCountUp в My UI Kit. Узнайте, как создавать анимированные счетчики с плавным увеличением значений.",
+    "keywords": [
+        "хук",
+        "useCountUp",
+        "счетчик",
+        "анимация",
+        "документация"
+    ]
 });
 
 export default async function hookUseCountUpPage() {

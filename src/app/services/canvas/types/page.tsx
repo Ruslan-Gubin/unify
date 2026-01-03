@@ -4,9 +4,12 @@ import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
+   
 export const metadata: Metadata = generateMetadata({
-	title: "Canvas Services Types",
-	description: "Canvas Services Types definition page",
+	title: "Типы Canvas - My UI Kit",
+	description: "Документация по типам Canvas в My UI Kit. Узнайте, как использовать различные типы Canvas для разных задач.",
+      keywords: ['Canvas', 'типы', 'графика', 'рисование', 
+      'HTML5', 'документация'],
 });
 
 export default async function CanvasTypesPage() {

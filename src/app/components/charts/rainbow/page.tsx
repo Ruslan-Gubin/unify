@@ -6,8 +6,15 @@ import { ChartRainbow } from "@/src/shared/ui/chart/rainbow/ChartRainbow";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Charts circle Page",
-  description: "Charts circle Page description",
+"title": "Круговые диаграммы - My UI Kit",
+    "description": "Документация по круговым диаграммам в My UI Kit. Узнайте, как создавать и настраивать круговые диаграммы для визуализации данных.",
+    "keywords": [
+        "круговые диаграммы",
+        "визуализация данных",
+        "Canvas",
+        "HTML5",
+        "документация"
+    ]
 });
 
 export default async function ChartsCirclePage() {

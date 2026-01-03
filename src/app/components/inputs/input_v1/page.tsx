@@ -6,8 +6,17 @@ import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 import { InputWrapper } from "./InputWrapper";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Input v1",
-  description: "Input v1 description",
+    "title": "Поле ввода v1 - My UI Kit",
+    "description": "Документация по первой версии поля ввода в My UI Kit. Узнайте, как использовать и настраивать базовую версию поля ввода.",
+    "keywords": [
+        "поле ввода",
+        "v1",
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default async function InputV1Page() {

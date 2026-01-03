@@ -7,8 +7,17 @@ import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Button v1",
-  description: "Button v1 description",
+  "title": "Кнопка v1 - My UI Kit",
+    "description": "Документация по первой версии кнопки в My UI Kit. Узнайте, как использовать и настраивать базовую версию кнопки.",
+    "keywords": [
+        "кнопка",
+        "v1",
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default async function ButtonV1Page() {

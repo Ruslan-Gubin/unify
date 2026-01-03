@@ -5,8 +5,16 @@ import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 import { generateMetadata } from "../../core/generateMetadata";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Navigate menu",
-  description: "Navigate menu page description",
+    "title": "Навигационное меню - My UI Kit",
+    "description": "Документация по навигационному меню в My UI Kit. Узнайте, как создавать и настраивать адаптивные меню для навигации по приложению.",
+    "keywords": [
+        "навигационное меню",
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default async function NavigateMenuPage() {

@@ -5,9 +5,11 @@ import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 import { generateMetadata } from "../../core/generateMetadata";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Resetting CSS Styles",
+  title: "Сброс стилей - My UI Kit",
   description:
     "Эффективный сброс CSS стилей для кроссбраузерной вёрстки. Изучите лучшие практики, получите готовые шаблоны и научитесь создавать универсальные стили для вашего сайта.",
+keywords: ['сброс стилей', 'CSS reset', 'стили', 
+      'компоненты', 'дизайн'],
 });
 
 export default async function StyleResetPage() {

@@ -4,8 +4,15 @@ import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 import { generateMetadata } from "../core/generateMetadata";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Layout",
-  description: "Layout example v1",
+"title": "Примеры макетов - My UI Kit",
+    "description": "Документация по примерам макетов в My UI Kit. Узнайте, как создавать и настраивать различные типы макетов для вашего приложения.",
+    "keywords": [
+        "макеты",
+        "компоновка",
+        "дизайн",
+        "UI Kit",
+        "документация"
+    ]
 });
 
 export default function LayoutExample() {

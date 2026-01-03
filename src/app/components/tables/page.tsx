@@ -4,8 +4,16 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Tables Page",
-  description: "Tables Page description",
+   "title": "Таблицы - My UI Kit",
+    "description": "Документация по таблицам в My UI Kit. Узнайте, как создавать и настраивать таблицы с различными функциями сортировки и фильтрации.",
+    "keywords": [
+        "таблицы",
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default function TablesPage() {

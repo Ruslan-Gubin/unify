@@ -5,8 +5,17 @@ import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 import { ModalWrapper } from "@/src/shared/ui/modals/ModalWrapper/ModalWrapper";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Modals",
-  description: "Modal description",
+  title: "Модальное окно - My UI Kit",
+  description:
+    "Документация по модальному окну в My UI Kit. Узнайте, как создавать и настраивать модальные окна с различными функциями и анимациями.",
+  keywords: [
+    "модальное окно",
+    "компоненты",
+    "UI Kit",
+    "документация",
+    "React",
+    "Next.js",
+  ],
 });
 
 export default function ModalPage() {
@@ -18,7 +27,7 @@ export default function ModalPage() {
           Modal v1
         </Button>
       </Link>
-        <ModalWrapper />
+      <ModalWrapper />
     </article>
   );
 }

@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { generateMetadata } from "@/src/app/core/generateMetadata";
-import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 import { EmailIcon } from "@/src/shared/svg/EmailIcon";
+import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Buttons Page",
-  description: "Buttons Page description",
+"title": "Кнопки - My UI Kit",
+    "description": "Документация по кнопкам в My UI Kit. Узнайте, как создавать и настраивать различные типы кнопок с разными стилями и функциями.",
+    "keywords": [
+        "кнопки",
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default function ButtonsPage() {

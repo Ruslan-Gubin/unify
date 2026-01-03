@@ -4,8 +4,15 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Hooks Page",
-  description: "Hooks Page description",
+  "title": "Хуки - My UI Kit",
+    "description": "Документация по хукам в My UI Kit. Узнайте, как использовать встроенные хуки для управления состоянием и побочными эффектами.",
+    "keywords": [
+        "хуки",
+        "React",
+        "состояние",
+        "побочные эффекты",
+        "документация"
+    ]
 });
 
 export default function HooksPage() {

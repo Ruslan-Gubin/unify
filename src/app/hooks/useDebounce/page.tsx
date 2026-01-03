@@ -5,8 +5,15 @@ import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Hook useDebounce Page",
-  description: "Hook useDebounce Page description",
+"title": "Хук useDebounce - My UI Kit",
+    "description": "Документация по хуку useDebounce в My UI Kit. Узнайте, как использовать debounce для оптимизации частых вызовов функций.",
+    "keywords": [
+        "хук",
+        "useDebounce",
+        "debounce",
+        "оптимизация",
+        "документация"
+    ]
 });
 
 export default async function UseDebouncePage() {

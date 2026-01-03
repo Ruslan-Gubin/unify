@@ -5,8 +5,15 @@ import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Hook useWindowSize Page",
-  description: "Hook useWindowSize Page description",
+"title": "Хук useWindowSize - My UI Kit",
+    "description": "Документация по хуку useWindowSize в My UI Kit. Узнайте, как отслеживать размеры окна браузера и реагировать на их изменения.",
+    "keywords": [
+        "хук",
+        "useWindowSize",
+        "размер окна",
+        "браузер",
+        "документация"
+    ]
 });
 
 export default async function UseWindowSizePage() {

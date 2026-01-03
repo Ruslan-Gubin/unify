@@ -3,13 +3,16 @@ import type { Metadata } from "next";
 export const generateMetadata = ({
   title,
   description,
+  keywords,
 }: {
   title: string;
   description: string;
+  keywords?: string[];
 }): Metadata => {
   return {
     description,
     metadataBase: new URL("https://example.com"),
+    keywords,
     title: { default: "My Site", template: `${title} | My Site` },
     alternates: {
       canonical: "https://example.com",
@@ -25,6 +28,6 @@ export const generateMetadata = ({
       siteName: "My Site",
       images: [{ url: "https://example.com/og.png" }],
     },
-    category: 'Constructor'
+    category: "Constructor",
   };
 };

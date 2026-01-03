@@ -5,8 +5,10 @@ import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 import { generateMetadata } from "../../core/generateMetadata";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Global CSS Styles",
-  description: "Структура стилей для начала проекта.",
+  title: "Глобальные стили - My UI Kit",
+  description: "Документация по глобальным стилям в My UI Kit. Узнайте, как настроить глобальные стили для всего приложения.",
+keywords: ['глобальные стили', 'CSS', 'стили', 
+      'компоненты', 'дизайн'],
 });
 
 export default async function StyleGlobalsPage() {

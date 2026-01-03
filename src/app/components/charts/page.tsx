@@ -4,8 +4,15 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Charts Page",
-  description: "Charts Page description",
+"title": "Графики - My UI Kit",
+    "description": "Документация по графикам в My UI Kit. Узнайте, как создавать и настраивать различные типы графиков для визуализации данных.",
+    "keywords": [
+        "графики",
+        "визуализация данных",
+        "Canvas",
+        "HTML5",
+        "документация"
+    ]
 });
 
 export default function ChartsPage() {

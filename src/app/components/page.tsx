@@ -4,8 +4,15 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Components Page",
-  description: "Components Page description",
+ "title": "Компоненты - My UI Kit",
+    "description": "Документация по компонентам в My UI Kit. Узнайте, как использовать и настраивать готовые компоненты для вашего приложения.",
+    "keywords": [
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default function ComponentsPage() {

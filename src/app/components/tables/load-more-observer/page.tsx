@@ -6,8 +6,16 @@ import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 import { Cards } from "@/src/views/Cards/Cards";
 
 export const metadata: Metadata = generateMetadata({
-  title: "LoadMoreObserver page",
-  description: "LoadMoreObserver page description",
+  title: "Загрузка данных по скроллу - My UI Kit",
+  description:
+    "Документация по компоненту LoadMoreObserver в My UI Kit. Узнайте, как реализовать подгрузку данных при прокрутке таблицы.",
+  keywords: [
+    "LoadMoreObserver",
+    "подгрузка данных",
+    "скролл",
+    "таблицы",
+    "документация",
+  ],
 });
 
 export default async function LoadMoreObserverPage() {

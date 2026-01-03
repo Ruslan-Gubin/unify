@@ -4,8 +4,14 @@ import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 
 export const metadata: Metadata = generateMetadata({
-	title: "Canvas Draw",
-	description: "Canvas Draw definition page",
+"title": "Рисование на Canvas - My UI Kit",
+    "description": "Документация по рисованию на Canvas в My UI Kit. Узнайте, как создавать и управлять элементами рисования на Canvas.",
+    "keywords": [
+        "Canvas",
+        "рисование",
+        "HTML5",
+        "документация"
+    ]
 });
 
 export default async function CanvasDrawPage() {

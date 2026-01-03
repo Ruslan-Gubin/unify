@@ -4,9 +4,11 @@ import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Canvas Pie Chart Draw",
-  description: "Canvas line chart page",
-});
+    title: "Рисование круговой диаграммы - My UI Kit",
+    description: "Документация по рисованию круговой диаграммы с использованием Canvas в My UI Kit. Узнайте,  как создавать и настраивать круговые диаграммы.",
+keywords: ['Canvas', 'круговая диаграмма', 'графика',
+  'рисование', 'HTML5', 'документация'],
+  });
 
 export default async function PieChartDrawPage() {
   const codeTs = await readContentFile(

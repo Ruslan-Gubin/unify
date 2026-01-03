@@ -4,8 +4,16 @@ import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Canvas services",
-  description: "Canvas services page",
+  "title": "Сервисы Canvas - My UI Kit",
+    "description": "Документация по сервисам Canvas в My UI Kit. Узнайте, как использовать встроенные сервисы для работы с Canvas, включая буферизацию и офлайн-рендеринг.",
+    "keywords": [
+        "Canvas",
+        "сервисы",
+        "буферизация",
+        "офлайн-рендеринг",
+        "HTML5",
+        "документация"
+    ]
 });
 
 export default async function CanvasServicesPage() {

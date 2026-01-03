@@ -6,8 +6,17 @@ import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
 import { ModalWrapper } from "@/src/shared/ui/modals/ModalWrapper/ModalWrapper";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Modal v1",
-  description: "Modal v1 description",
+"title": "Модальное окно v1 - My UI Kit",
+    "description": "Документация по первой версии модального окна в My UI Kit. Узнайте, как использовать и настраивать базовую версию модального окна.",
+    "keywords": [
+        "модальное окно",
+        "v1",
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default async function ModalV1Page() {

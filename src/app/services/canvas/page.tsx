@@ -4,8 +4,10 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Canvas Page",
-  description: "Canvas Page description",
+  title: "Canvas - My UI Kit",
+  description: "Документация по работе с Canvas в My UI Kit. Узнайте, как создавать и управлять элементами Canvas с помощью встроенных инструментов.",
+keywords: ['Canvas', 'графика', 'рисование', 'HTML5', 
+      'документация']
 });
 
 export default function CanvasPage() {

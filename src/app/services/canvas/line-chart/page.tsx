@@ -4,8 +4,10 @@ import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Canvas line chart",
-  description: "Canvas line chart page",
+title: 'Линейный график - My UI Kit',
+description: 'Документация по созданию линейного графика с использованием Canvas в My UI Kit. Узнайте, как строить и настраивать линейные графики.',
+keywords: ['Canvas', 'линейный график', 'графика', 
+      'рисование', 'HTML5', 'документация']
 });
 
 export default async function LineChartPage() {

@@ -8,8 +8,10 @@ import { LayoutLeftSide } from "../views/LayoutLeftSide/LayoutLeftSide";
 import styles from "./styles/layout.module.css";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Ui storage",
-  description: "Ui kit storage",
+  title: "My UI Kit - Библиотека компонентов",
+  description:
+    "My UI Kit — это библиотека переиспользуемых компонентов для быстрой разработки интерфейсов.",
+  keywords: ["UI Kit", "компоненты", 'components', "React", "Next.js", "дизайн", 'хуки', 'hooks'],
 });
 
 export default async function RootLayout(

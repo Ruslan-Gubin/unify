@@ -5,8 +5,16 @@ import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 import { Input } from "@/src/shared/ui/inputs/Input_v1/Input";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Inputs Page",
-  description: "Inputs Page description",
+"title": "Поля ввода - My UI Kit",
+    "description": "Документация по полям ввода в My UI Kit. Узнайте, как создавать и настраивать различные типы полей ввода с валидацией и стилями.",
+    "keywords": [
+        "поля ввода",
+        "компоненты",
+        "UI Kit",
+        "документация",
+        "React",
+        "Next.js"
+    ]
 });
 
 export default function InputsPage() {
