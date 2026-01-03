@@ -218,12 +218,6 @@ export const LayoutLeftSide = () => {
         },
       ],
     },
-    {
-      label: "Community",
-      href: "/community",
-      icon: <CommunityIcon />,
-      children: [],
-    },
   ];
 
   return (
