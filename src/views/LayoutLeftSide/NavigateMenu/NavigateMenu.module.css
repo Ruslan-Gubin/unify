@@ -1,6 +1,7 @@
 .navigateMenuList {
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 
 .navigateMenuItemWrapper {
@@ -24,10 +25,8 @@
 
 .navigateMenuNavChildren {
   padding-left: 20px;
-  will-change: contents;
-  animation: openMenuAnimation 0.2s linear 0s 1 forwards;
-  overflow: hidden;
-  interpolate-size: allow-keywords;
+  will-change: transform, opacity;
+  animation: openMenuAnimation 0.15s linear 0s 1 forwards;
 
   .navigateMenuList {
     border-left: 1px solid lightgrey;
@@ -41,11 +40,18 @@
 
 @keyframes openMenuAnimation {
   0% {
-    height: 0px;
+    opacity: 0;
+    transform: translateY(-60%) scale(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-20%) scale(1);
   }
 
   100% {
-    height: auto;
+    opacity: 1;
+    transform: translateY(0%) scale(1);
   }
 }
 
@@ -66,6 +72,7 @@
 }
 
 .navigateMenuItemSvgActive {
+  will-change: transform;
   transform: rotate(90deg);
   animation: rotateBird 0.2s ease 1 forwards;
 }
