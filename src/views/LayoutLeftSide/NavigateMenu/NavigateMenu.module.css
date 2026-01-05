@@ -24,6 +24,7 @@
 
 .navigateMenuNavChildren {
   padding-left: 20px;
+  will-change: contents;
   animation: openMenuAnimation 0.2s linear 0s 1 forwards;
   overflow: hidden;
   interpolate-size: allow-keywords;
