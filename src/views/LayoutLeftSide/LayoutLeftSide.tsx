@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import styles from "./LayoutLeftSide.module.css";
 import { NavigateMenu } from "./NavigateMenu/NavigateMenu";
-import { CommunityIcon } from "./svg/Community/CommunityIcon";
 import { HomeIcon } from "./svg/Home/HomeIcon";
 import { LayoutIcon } from "./svg/Layout/LayoutIcon";
 
