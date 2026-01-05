@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
-import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
-import { TimeSelectContainer } from "@/src/views/TimeSelectContainer/TimeSelectContainer";
+import { WeekCalendarLine } from "@/src/shared/ui/selects/WeekCalendarLine/WeekCalendarLine";
 
 export const metadata: Metadata = generateMetadata({
-	title: "Time Select Component - My UI Kit",
+	title: "Week calendar line - My UI Kit",
 	description:
 		"Документация по компоненту выбора времени (Time Select) в My UI Kit. Узнайте, как создавать и настраивать элементы выбора времени с различными функциями и возможностями.",
 	keywords: [
@@ -20,44 +19,26 @@ export const metadata: Metadata = generateMetadata({
 	],
 });
 
-export default async function TimeSelectPage() {
+export default async function WeekCalendarLinePage() {
 	const codeTsx = await readContentFile(
-		"src/shared/ui/selects/SelectTime/SelectTime.tsx",
+		"src/shared/ui/selects/WeekCalendarLine/WeekCalendarLine.tsx",
 	);
 
 	const codeCss = await readContentFile(
-		"src/shared/ui/selects/SelectTime/SelectTime.module.css",
+		"src/shared/ui/selects/WeekCalendarLine/WeekCalendarLine.module.css",
 	);
 
 	const codeSvg = await readContentFile(
-		"src/shared/ui/selects/SelectTime/svg/TimeSelectIcon.tsx",
+		"src/shared/ui/selects/WeekCalendarLine/svg/CalendarArrowIcon.tsx",
 	);
 
 	return (
 		<article className="article__page">
-			<h1>Time select</h1>
-			<InfoBlock
-				title="Параметры"
-				infoList={[
-					{
-						label: "hour",
-						value: "",
-					},
-					{
-						label: "minutes",
-						value: "",
-					},
-					{
-						label: "onChangeHours",
-						value: "",
-					},
-					{
-						label: "onChangeMinutes",
-						value: "",
-					},
-				]}
-			/>
-			<TimeSelectContainer />
+			<h1>Week calendar line</h1>
+
+			<div style={{ maxWidth: "540px" }}>
+				<WeekCalendarLine />
+			</div>
 
 			{typeof codeTsx === "string" && (
 				<CodeWrapper fileName="SelectTime.tsx" title="TSX" code={codeTsx} />

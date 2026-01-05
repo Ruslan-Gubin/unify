@@ -1,0 +1,117 @@
+.mount {
+  color: black;
+  font-size: 16px;
+  padding-bottom: 16px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendarList {
+  width: 455px;
+  height: 60px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 25px;
+  align-items: center;
+  cursor: default;
+  background-color: #f8f8f8;
+
+  @media (max-width: 880px) {
+    padding: 10px 25px;
+    padding-inline: 25px;
+    border-radius: 15px;
+    width: 455px;
+    height: 60px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 4.5px 12px;
+    padding-inline: 0;
+    border-radius: 7px;
+    width: 230px;
+    height: 27px;
+  }
+}
+
+.calendarItem {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  width: 45px;
+  height: 62px;
+  border-radius: 15px;
+  color: #626667;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    width: 45px;
+    height: 62px;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 500px) {
+    width: 30px;
+    height: 40px;
+    border-radius: 8px;
+  }
+}
+
+.calendarItemActive {
+  background-color: #ebf8f7;
+}
+
+.selectDate {
+  background-color: #128c88;
+  color: white;
+}
+
+.calendarDay {
+  user-select: none;
+  font-size: 10px;
+  color: currentColor;
+
+  @media (max-width: 880px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 7px;
+  }
+}
+
+.calendarNumber {
+  user-select: none;
+  font-size: 16px;
+  color: currentColor;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.arrowLeft {
+  width: 15px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.arrowRight {
+  width: 15px;
+  height: 24px;
+  cursor: pointer;
+}

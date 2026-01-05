@@ -1,0 +1,28 @@
+.root {
+  height: 24px;
+  border-radius: 200px;
+  background-color: #d4d6dd;
+  position: relative;
+  width: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.rootActive {
+  background-color: #71da7d;
+}
+
+.circle {
+  position: absolute;
+  transition: transform 0.1s linear;
+  transform: translateX(4px);
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.circleActive {
+  transform: translateX(16px);
+  transition: transform 0.1s linear;
+}
