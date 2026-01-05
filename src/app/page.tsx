@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { NotDataIcon } from "../shared/svg/NotDataIcon/NotDataIcon";
+import { EmptyContent } from "../shared/ui/EmptyContent/EmptyContent";
 import { InfoBlock } from "../shared/ui/InfoBlock/InfoBlock";
 import { generateMetadata } from "./core/generateMetadata";
 
@@ -12,6 +14,9 @@ export default function Home() {
   return (
     <article className="article__page">
       <h1>My UI Kit</h1>
+      <EmptyContent>
+        <NotDataIcon />
+      </EmptyContent>
       <p>
         Добро пожаловать в My UI Kit - сборник часто используемых UI-компонентов, полезных хуков и рецептов для написания оптимизированного кода с использованием нативного CSS стиля, без сложных решений.
       </p>

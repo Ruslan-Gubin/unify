@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { generateMetadata } from "@/src/app/core/generateMetadata";
+import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
+import { TimeSelectContainer } from "@/src/views/TimeSelectContainer/TimeSelectContainer";
+
+export const metadata: Metadata = generateMetadata({
+  title: "Select Components - My UI Kit",
+  description:
+    "Документация по компонентам выбора (Select) в My UI Kit. Узнайте, как создавать и настраивать различные типы select элементов с различными функциями и возможностями.",
+  keywords: [
+    "select",
+    "компоненты",
+    "UI Kit",
+    "документация",
+    "React",
+    "Next.js",
+  ],
+});
+
+export default function SelectPage() {
+  return (
+    <article className="article__page">
+      <h1>Select</h1>
+      <Link href={"/components/select/time-select"}>
+        <Button variantColor="blue" variant="link">
+          Time select
+        </Button>
+      </Link>
+<TimeSelectContainer/>
+    </article>
+  );
+}

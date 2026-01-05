@@ -1,0 +1,84 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  user-select: none;
+}
+
+.value {
+  width: 108px;
+  height: 40px;
+  min-height: 40px;
+  border-radius: 12px;
+  padding-inline: 12px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  cursor: pointer;
+
+  @media (max-width: 880px) {
+    column-gap: 8px;
+  }
+}
+
+.valueDate {
+  font-size: 12px;
+}
+
+.menuContainer {
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+  height: 200px;
+  width: 108px;
+  display: flex;
+  padding: 3px;
+  column-gap: 3px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.06);
+}
+
+.timesList {
+  width: 50%;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.timesItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.197);
+    cursor: pointer;
+  }
+
+  & button {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.timesItemActive {
+  background-color: black;
+
+  & button {
+    color: white;
+  }
+
+  &:hover {
+    background-color: black;
+    cursor: pointer;
+  }
+}

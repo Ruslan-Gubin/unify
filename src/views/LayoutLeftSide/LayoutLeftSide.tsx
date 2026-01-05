@@ -75,6 +75,25 @@ export const LayoutLeftSide = () => {
               icon: "",
               children: [],
             },
+            {
+              label: "Input v2",
+              href: "/components/inputs/input_v2",
+              icon: "",
+              children: [],
+            },
+          ],
+        },
+        {
+          label: "Select",
+          href: "/components/select",
+          icon: "",
+          children: [
+            {
+              label: "Time select",
+              href: "/components/select/time-select",
+              icon: "",
+              children: [],
+            },
           ],
         },
         {
@@ -123,6 +142,25 @@ export const LayoutLeftSide = () => {
             {
               label: "Wave Line",
               href: "/components/charts/wave-line-chart",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Chart column",
+              href: "/components/charts/chart-column",
+              icon: "",
+              children: [],
+            },
+          ],
+        },
+        {
+          label: "Empty content",
+          href: "/components/empty-content",
+          icon: "",
+          children: [
+            {
+              label: "Empty content v1",
+              href: "/components/empty-content/empty-content-v1",
               icon: "",
               children: [],
             },
