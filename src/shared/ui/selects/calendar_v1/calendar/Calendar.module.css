@@ -1,0 +1,109 @@
+.root {
+  will-change: opacity;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-6px);
+  font-weight: 800;
+  animation: open 0.15s linear 0s 1;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.content {
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 7.4%);
+  border-radius: 10px;
+  padding-bottom: 10px;
+
+  @media (max-width: 500px) {
+    max-width: 90vw;
+  }
+}
+
+.headerLine {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.091);
+  height: 39px;
+  padding: 13px 12px 6px;
+}
+
+.monthValue {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.buttonArray {
+  background-color: rgb(255 255 255 / 0%);
+  border: none;
+  cursor: pointer;
+}
+
+.mouthText {
+  position: relative;
+  top: -2px;
+  min-width: 80px;
+  text-align: center;
+
+  @media (max-width: 410px) {
+    min-width: 70px;
+  }
+}
+
+.mouthTextYear {
+  position: relative;
+  top: -2px;
+  min-width: 40px;
+  text-align: center;
+
+  @media (max-width: 410px) {
+    min-width: 70px;
+  }
+}
+
+.itemsWrapper {
+  padding-inline: 16px;
+}
+
+.daysList {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendarDayList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 18px;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+.dayItem {
+  text-align: center;
+  color: #a0aec0;
+  min-width: 32px;
+  cursor: default;
+  user-select: none;
+  font-weight: 600;
+  font-size: 12px;
+}

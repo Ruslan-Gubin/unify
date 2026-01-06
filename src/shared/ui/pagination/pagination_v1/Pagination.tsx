@@ -10,38 +10,34 @@ type Props = {
   onChange: (value: number) => void;
 };
 
-export const Pagination = ({
-  perPage,
-  total,
-  page,
-  className,
-  onChange,
-}: Props) => {
-  const lastPage = Math.ceil(total / perPage);
-  const numbers: number[] = [...paginationNumbers(page, lastPage)];
-
-  const getPageNumber = (page: number) => {
-    return page < 10 ? `0${page}` : page;
-  };
+export const Pagination = (
+  props: Props,
+) => {
+  const lastPage = Math.ceil(props.total / props.perPage);
+  const numbers: number[] = [...paginationNumbers(props.page, lastPage)];
 
   return (
-    <ul className={`${styles.pagination} ${className ?? ""}`}>
+    <ul className={`${styles.pagination} ${props.className ?? ""}`}>
       {numbers.map((currentPage, index) => (
         <li key={index}>
           <button
             type="button"
             onClick={() =>
-              currentPage === page || !currentPage
+              currentPage === props.page || !currentPage
                 ? false
-                : onChange(currentPage)
+                : props.onChange(currentPage)
             }
             className={
-              currentPage === page
+              currentPage === props.page
                 ? `${styles.paginationPage} ${styles.paginationPageWhite} `
                 : styles.paginationPage
             }
           >
-            {currentPage === 0 ? <div>...</div> : getPageNumber(currentPage)}
+            {currentPage
+              ? currentPage < 10
+                ? `0${currentPage}`
+                : currentPage
+              : "..."}
           </button>
         </li>
       ))}

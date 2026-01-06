@@ -3,14 +3,14 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
-import { PaginationWrapperV1 } from "@/src/views/PaginationWrapper/PaginationWrapperV1/PaginationWrapperV1";
+import { PaginationWrapperV2 } from "@/src/views/PaginationWrapper/PaginationWrapperV2/PaginationWrapperV2";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Pagination v1 - My UI Kit",
+  title: "Pagination v2 - My UI Kit",
   description:
     "Документационная страница для версии компонента пагинации в UI Kit. Она предоставляет информацию о том, как использовать и настраивать базовую версию компонента пагинации, включая пример реализации и исходный код. Страница включает в себя интерактивный пример компонента, отображение параметров (хотя в текущей реализации список параметров пуст), а также исходные коды компонента (TSX и CSS). Это позволяет разработчикам легко понять, как интегрировать и настроить пагинацию в своих приложениях.",
   keywords: [
-    "пагинация",
+    "модальное окно",
     "v1",
     "компоненты",
     "UI Kit",
@@ -20,22 +20,26 @@ export const metadata: Metadata = generateMetadata({
   ],
 });
 
-export default async function PaginationV1Page() {
+export default async function PaginationV2Page() {
   const codeTsx = await readContentFile(
-    "src/shared/ui/pagination/pagination_v1/Pagination.tsx",
+    "src/shared/ui/pagination/pagination_v2/Pagination.tsx",
   );
 
   const codeCss = await readContentFile(
-    "src/shared/ui/pagination/pagination_v1/Pagination.module.css",
+    "src/shared/ui/pagination/pagination_v2/Pagination.module.css",
   );
 
   const helperTs = await readContentFile(
-    "src/shared/ui/pagination/pagination_v1/helper.ts",
+    "src/shared/ui/pagination/pagination_v2/helper.ts",
+  );
+
+  const iconSvg = await readContentFile(
+    "src/shared/ui/pagination/pagination_v2/svg/ArrowIcon.tsx",
   );
 
   return (
     <article className="article__page">
-      <h1>Pagination</h1>
+      <h1>Pagination v2</h1>
       <InfoBlock
         title="Параметры"
         infoList={[
@@ -70,7 +74,7 @@ export default async function PaginationV1Page() {
           },
         ]}
       />
-      <PaginationWrapperV1 />
+      <PaginationWrapperV2 />
       {typeof codeTsx === "string" && (
         <CodeWrapper fileName="Pagination.tsx" title="TSX" code={codeTsx} />
       )}
@@ -82,8 +86,13 @@ export default async function PaginationV1Page() {
           code={codeCss}
         />
       )}
+
       {typeof helperTs === "string" && (
         <CodeWrapper fileName="helper.ts" title="TS" code={helperTs} />
+      )}
+      
+      {typeof iconSvg === "string" && (
+        <CodeWrapper fileName="ArrowIcon.tsx" title="TSX" code={iconSvg} />
       )}
     </article>
   );

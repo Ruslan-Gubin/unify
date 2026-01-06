@@ -44,6 +44,11 @@ export default function ComponentsPage() {
 					Tables
 				</Button>
 			</Link>
+			<Link href={"/components/pagination"}>
+				<Button variantColor="blue" variant="link">
+					Pagination
+				</Button>
+			</Link>
 			<Link href={"/components/charts"}>
 				<Button variantColor="blue" variant="link">
 					Charts

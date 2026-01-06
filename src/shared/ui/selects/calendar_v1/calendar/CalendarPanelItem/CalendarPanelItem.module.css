@@ -1,0 +1,46 @@
+.calendarPanelItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  padding: 1px;
+}
+
+
+.calendarPanelItemNumber {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a202c;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  font-weight: 500;
+
+  &:hover {
+    transition: all 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.079);
+  }
+}
+
+.calendarPanelItemSelected {
+  background-color: black;
+  color: white;
+
+  &:hover {
+    transition: all 0.2s ease;
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+.itemToday {
+  border: 1px solid rgba(0, 0, 0, 0.157);
+}
+
+.calendarPanelItemNotInRange {
+  color: #a0aec0;
+}

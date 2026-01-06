@@ -100,6 +100,12 @@ export const LayoutLeftSide = () => {
               icon: "",
               children: [],
             },
+            {
+              label: "Calendar v1",
+              href: "/components/select/calendar-v1",
+              icon: "",
+              children: [],
+            },
           ],
         },
         {
@@ -149,6 +155,12 @@ export const LayoutLeftSide = () => {
             {
               label: "Pagination v1",
               href: "/components/pagination/pagination_v1",
+              icon: "",
+              children: [],
+            },
+            {
+              label: "Pagination v2",
+              href: "/components/pagination/pagination_v2",
               icon: "",
               children: [],
             },

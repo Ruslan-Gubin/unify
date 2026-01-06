@@ -1,0 +1,73 @@
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1ba7a2;
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+.paginationPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentcolor;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+  @media (max-width: 500px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.paginationPageWhite {
+  background-color: #1ba7a2;
+  background-image: linear-gradient(to right, (#1ba7a2 #42c9c4));
+  color: white;
+  border-radius: 4px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.paginationButton {
+  height: 40px;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: transparent;
+  color: #1ba7a2;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  column-gap: 8px;
+  margin-inline: 10px;
+  transition: all 0.3s ease;
+
+  @media (max-width: 500px) {
+    column-gap: 4px;
+    margin-inline: 5px;
+  }
+}
+
+.paginationButton:disabled {
+  color: #697077;
+  cursor: default;
+}
+
+
+.buttonText {
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+
+.arrowRight {
+  position: relative;
+  top: -2px;
+  transform: rotate(180deg);
+}
