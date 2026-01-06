@@ -26,7 +26,7 @@
 .navigateMenuNavChildren {
   padding-left: 20px;
   will-change: transform, opacity;
-  animation: openMenuAnimation 0.15s linear 0s 1 forwards;
+  animation: openMenuAnimation 0.1s linear 0s 1 forwards;
 
   .navigateMenuList {
     border-left: 1px solid lightgrey;
@@ -46,7 +46,7 @@
 
   50% {
     opacity: 0;
-    transform: translateY(-20%) scale(1);
+    transform: translateY(-10%) scale(1);
   }
 
   100% {
