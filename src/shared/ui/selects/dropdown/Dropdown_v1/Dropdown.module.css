@@ -25,9 +25,12 @@
 }
 
 .selectValueButtonAction {
-  border-bottom: none;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+.selectValueButton:focus-visible {
+  border-color: gray;
 }
 
 .dropdownSelectedValue {
@@ -90,6 +93,7 @@
 
 .dropdownMenuActive {
   z-index: 1;
+  border-top: none;
 }
 
 .dropdownMenuItemButton {
@@ -105,6 +109,10 @@
     background-color: lightgray;
     color: white;
   }
+}
+
+.dropdownMenuItemButton:focus {
+  box-shadow: 1px 1px 5px 1px lightslategray;
 }
 
 .dropdownMenuItemButtonActive {
