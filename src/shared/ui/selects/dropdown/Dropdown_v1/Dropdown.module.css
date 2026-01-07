@@ -1,0 +1,122 @@
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  font-size: 14px;
+  width: attr(data-width px);
+  user-select: none;
+}
+
+.selectValueButton {
+  padding: 11px 16px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 16px;
+  align-items: center;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+.selectValueButton:disabled {
+  cursor: default;
+  border-bottom: none;
+}
+
+.selectValueButtonAction {
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.dropdownSelectedValue {
+  color: #21272a;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  opacity: attr(data-opacity);
+}
+
+.dropdownSelectedValueOpacity {
+  opacity: 0.5;
+}
+
+.arrowIcon {
+  width: 13px;
+  height: 20px;
+}
+
+.arrowIconActive {
+  will-change: transform;
+  animation: rotateOpen 0.15s linear 0s 1 forwards;
+}
+
+@keyframes rotateOpen {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+.dropdownMenu {
+  width: 100%;
+  position: absolute;
+  overflow-y: auto;
+  max-height: attr(data-height px);
+  background-color: white;
+  border: 1px solid lightgray;
+  transform: translateY(40px) translateX(0px);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 0;
+    background: rgb(128 128 128 / 0%);
+    border-radius: 8px;
+    margin-right: 10px;
+    padding-left: 20px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 20px;
+  }
+}
+
+.dropdownMenuActive {
+  z-index: 1;
+}
+
+.dropdownMenuItemButton {
+  padding-left: 16px;
+  height: 40px;
+  min-width: 100%;
+  text-align: start;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  &:hover {
+    background-color: lightgray;
+    color: white;
+  }
+}
+
+.dropdownMenuItemButtonActive {
+  background-color: black;
+  color: white;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.dropdownMenuItemButtonText {
+  color: currentColor;
+}

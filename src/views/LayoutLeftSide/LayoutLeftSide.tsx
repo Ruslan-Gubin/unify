@@ -106,6 +106,12 @@ export const LayoutLeftSide = () => {
               icon: "",
               children: [],
             },
+            {
+              label: "Dropdown v1",
+              href: "/components/select/dropdown-v1",
+              icon: "",
+              children: [],
+            },
           ],
         },
         {
