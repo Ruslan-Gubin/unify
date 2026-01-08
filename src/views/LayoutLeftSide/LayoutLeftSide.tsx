@@ -107,6 +107,12 @@ export const LayoutLeftSide = () => {
               children: [],
             },
             {
+              label: "Calendar v2",
+              href: "/components/select/calendar-v2",
+              icon: "",
+              children: [],
+            },
+            {
               label: "Dropdown v1",
               href: "/components/select/dropdown-v1",
               icon: "",

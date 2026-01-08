@@ -4,8 +4,9 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 import { WeekCalendarLine } from "@/src/shared/ui/selects/WeekCalendarLine/WeekCalendarLine";
 import { CalendarWrapperV1 } from "@/src/views/CalendarWrapper/CalendarWrapperV1";
-import { TimeSelectContainer } from "@/src/views/TimeSelectContainer/TimeSelectContainer";
+import { CalendarWrapperV2 } from "@/src/views/CalendarWrapper/CalendarWrapperV2";
 import { DropDownWrapperV1 } from "@/src/views/DropDownWrapper/DropDownWrapperV1";
+import { TimeSelectContainer } from "@/src/views/TimeSelectContainer/TimeSelectContainer";
 
 export const metadata: Metadata = generateMetadata({
   title: "Select Components - My UI Kit",
@@ -27,13 +28,13 @@ export default function SelectPage() {
       <h1>Select</h1>
       <Link href={"/components/select/time-select"}>
         <Button variantColor="blue" variant="link">
-          {'Time select'}
+          {"Time select"}
         </Button>
       </Link>
       <TimeSelectContainer />
       <Link href={"/components/select/week-calendar-line"}>
         <Button variantColor="blue" variant="link">
-          {'Week Calendar Line'}
+          {"Week Calendar Line"}
         </Button>
       </Link>
       <div style={{ maxWidth: "540px" }}>
@@ -41,13 +42,19 @@ export default function SelectPage() {
       </div>
       <Link href={"/components/select/calendar-v1"}>
         <Button variantColor="blue" variant="link">
-          {'Calendar v1'}
+          {"Calendar v1"}
         </Button>
       </Link>
       <CalendarWrapperV1 />
+      <Link href={"/components/select/calendar-v2"}>
+        <Button variantColor="blue" variant="link">
+          {"Calendar v2"}
+        </Button>
+      </Link>
+      <CalendarWrapperV2 />
       <Link href={"/components/select/dropdown-v1"}>
         <Button variantColor="blue" variant="link">
-          {'Dropdown v1'}
+          {"Dropdown v1"}
         </Button>
       </Link>
       <DropDownWrapperV1 />

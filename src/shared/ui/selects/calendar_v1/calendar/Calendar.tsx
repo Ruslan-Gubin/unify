@@ -15,8 +15,8 @@ import {
   getDaysAmountInAMonth,
   getNextMonthDays,
   getPreviousMonthDays,
+  getWeekArray,
   monthsRu,
-  weekList,
 } from "./utils";
 
 export type Props = {
@@ -147,7 +147,7 @@ export const Calendar = ({
         </header>
         <div className={styles.itemsWrapper}>
           <ul className={styles.calendarDayList}>
-            {weekList.map((day) => (
+            {getWeekArray(lang).map((day) => (
               <li key={day} className={styles.dayItem}>
                 {day[0]}
               </li>

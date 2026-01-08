@@ -4,9 +4,10 @@ import styles from "./SelectCalendar.module.css";
 import { SelectIcon } from "./svg/SelectIcon";
 
 type Props = {
-  label?: string;
+  placeholder?: string;
   date: Date | null;
   onChange: (date: Date) => void;
+  lang?: "ru" | "en";
 };
 
 export const SelectCalendar = (props: Props) => {
@@ -28,7 +29,7 @@ export const SelectCalendar = (props: Props) => {
           {props.date ? (
             props.date.toLocaleString().slice(0, 10)
           ) : (
-            <p className={styles.label}>{props.label ?? ""}</p>
+            <p className={styles.placeholder}>{props.placeholder ?? ""}</p>
           )}
         </span>
       </button>
@@ -40,7 +41,7 @@ export const SelectCalendar = (props: Props) => {
             parentRef={ref}
             selectDate={props.date ? props.date : new Date()}
             todayDate={new Date()}
-            lang="ru"
+            lang={props.lang ?? 'ru'}
           />
         )}
       </div>

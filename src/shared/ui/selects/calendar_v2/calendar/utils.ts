@@ -1,3 +1,4 @@
+import type { SelectDatesType } from "../types";
 
 export const getWeekArray = (lang: "ru" | "en") => {
   return lang === "ru"
@@ -56,7 +57,6 @@ export const getDaysAmountInAMonth = (year: number, month: number) => {
   return nextMonthDate.getDate();
 };
 
-
 const getDayOfTheWeek = (date: Date, lang: "en" | "ru") => {
   const day = date.getDay();
 
@@ -68,7 +68,11 @@ const getDayOfTheWeek = (date: Date, lang: "en" | "ru") => {
   return langMap[lang];
 };
 
-export const getPreviousMonthDays = (year: number, month: number, lang: "en" | "ru") => {
+export const getPreviousMonthDays = (
+  year: number,
+  month: number,
+  lang: "en" | "ru",
+) => {
   const currentMonthFirstDay = new Date(year, month, 1);
   const prevMonthCellsAmount = getDayOfTheWeek(currentMonthFirstDay, lang);
 
@@ -91,7 +95,11 @@ export const getPreviousMonthDays = (year: number, month: number, lang: "en" | "
   return dateCells;
 };
 
-export const getNextMonthDays = (year: number, month: number, lang: "en" | "ru") => {
+export const getNextMonthDays = (
+  year: number,
+  month: number,
+  lang: "en" | "ru",
+) => {
   const currentMonthFirstDay = new Date(year, month, 1);
   const prevMonthCellsAmount = getDayOfTheWeek(currentMonthFirstDay, lang);
 
@@ -251,4 +259,14 @@ function isSmallerThanDate(value: Date, date: Date) {
 
 export const getFormattedCellDate = (cell: DateCellItem) => {
   return new Date(cell.year, cell.month, cell.date);
+};
+
+export const getInitPanelYear = (dates: SelectDatesType) => {
+  const currentDate = dates.dateTo || dates.dateFrom || new Date();
+  return currentDate.getFullYear();
+};
+
+export const getInitPanelMonth = (dates: SelectDatesType) => {
+  const currentDate = dates.dateTo || dates.dateFrom || new Date();
+  return currentDate.getMonth();
 };

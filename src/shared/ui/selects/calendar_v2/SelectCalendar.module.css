@@ -1,0 +1,79 @@
+.root {
+  position: relative;
+  width: attr(data-width px);
+}
+
+.select {
+  min-width: 150px;
+  height: 40px;
+}
+
+.selectMultiply {
+  min-width: 250px;
+}
+
+.selectButton {
+  position: absolute;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+  height: 100%;
+  padding-right: 44px;
+  border: 1px solid lightgray;
+  padding-inline: 12px;
+  border-radius: 4px;
+
+  @media (max-width: 880px) {
+    column-gap: 8px;
+    padding-right: 36px;
+    padding-inline: 8px;
+  }
+}
+
+.selectButton:focus-visible {
+  border-color: gray;
+}
+
+.selectText {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @media (max-width: 880px) {
+    max-width: calc(100% - 44px);
+  }
+}
+
+.dateCenter {
+  padding-inline: 4px;
+  text-align: center;
+}
+
+.selectTextDateOpacity {
+  opacity: 0.5;
+  text-align: center;
+}
+
+
+.iconContainer {
+  width: 20px;
+  height: 20px;
+}
+
+
+.clearButton {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: 880px) {
+    right: 8px;
+  }
+}
+
+.clearButton:disabled {
+  z-index: -1;
+}

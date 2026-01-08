@@ -8,7 +8,7 @@ export const CalendarWrapperV1 = () => {
     <div style={{ width: "130px" }}>
       <SelectCalendar
         onChange={setDate}
-        label="Выберите дату"
+        placeholder="Выберите дату"
         date={date}
       />
     </div>
