@@ -3,6 +3,8 @@
 ## Project Overview
 A project for collecting frequently reused UI components that may be needed in any project, as well as useful hooks, working with native css style, recipes for writing optimized code, drawing on canvas, without complicated solutions.
 
+not update code
+
 ## Project Information
 - Project Name: my-ui-kit.
 - Project Type: Web application.
