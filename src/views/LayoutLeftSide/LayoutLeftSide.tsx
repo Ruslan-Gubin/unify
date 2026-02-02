@@ -231,6 +231,11 @@ export const LayoutLeftSide = () => {
       ],
     },
     {
+      label: "Widget",
+      href: "/widget",
+      children: [],
+    },
+    {
       label: "Hooks",
       href: "/hooks",
       icon: "",
