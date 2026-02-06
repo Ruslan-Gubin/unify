@@ -26,6 +26,7 @@
 
 .valueDate {
   font-size: 12px;
+  color: var(--text-color-main);
 }
 
 .menuContainer {
@@ -45,11 +46,7 @@
 .timesList {
   width: 50%;
   overflow-y: scroll;
-
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  scrollbar-width: none;
 }
 
 .timesItem {
@@ -67,6 +64,7 @@
   & button {
     height: 100%;
     width: 100%;
+    color: var(--text-color-main);
   }
 }
 

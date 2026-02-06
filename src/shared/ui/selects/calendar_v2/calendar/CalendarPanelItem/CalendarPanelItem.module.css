@@ -5,6 +5,7 @@
   font-size: 18px;
   min-height: 40px;
   cursor: pointer;
+  color: var(--text-color-main);
 
   @media (max-width: 880px) {
     min-height: 44px;

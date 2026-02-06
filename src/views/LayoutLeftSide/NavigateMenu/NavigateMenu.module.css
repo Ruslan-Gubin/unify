@@ -58,6 +58,7 @@
 .navigateMenuItemLink {
   width: 100%;
   column-gap: var(--border-radius-main);
+  color: var(--text-color-main);
   display: flex;
   align-items: center;
   min-height: 30px;
