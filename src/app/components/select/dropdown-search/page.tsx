@@ -3,12 +3,12 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { readContentFile } from "@/src/shared/services/read-content-file";
 import { CodeWrapper } from "@/src/shared/ui/CodeWrapper/CodeWrapper";
 import { InfoBlock } from "@/src/shared/ui/InfoBlock/InfoBlock";
-import { DropDownWrapperV1 } from "@/src/views/DropDownWrapper/DropDownWrapperV1";
+import { DropdownSearchWrapper } from "@/src/views/DropdownSearchWrapper/DropdownSearchWrapper";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Dropdown v1 - My UI Kit",
+  title: "Dropdown search - My UI Kit",
   description:
-    "Компонент Dropdown - это переиспользуемый элемент пользовательского интерфейса, реализующий выпадающий список с возможностью выбора одного из предложенных вариантов. Компонент реализован в соответствии с принципами проекта my-ui-kit, используя нативные CSS-стили и минимальные зависимости.",
+    "DropdownSearch — это переиспользуемый элемент пользовательского интерфейса, реализующий комбинацию поля ввода с автодополнением и выпадающего списка для поиска и выбора одного значения из предложенных вариантов Компонент разработан в соответствии с принципами проекта my-ui-kit, используя нативные CSS-стили, семантический HTML и минимальные внешние зависимости.",
   keywords: [
     "dropdown",
     "компоненты",
@@ -19,22 +19,25 @@ export const metadata: Metadata = generateMetadata({
   ],
 });
 
-export default async function DropdownV1Page() {
+export default async function DropdownSearchPage() {
+  const wrapperTsx = await readContentFile(
+    "src/views/DropdownSearchWrapper/DropDownSearchWrapper.tsx",
+  );
   const codeTsx = await readContentFile(
-    "src/shared/ui/selects/dropdown/Dropdown_v1/Dropdown.tsx",
+    "src/shared/ui/selects/dropdown/Dropdown_v2/DropdownSearch.tsx",
   );
 
   const codeCss = await readContentFile(
-    "src/shared/ui/selects/dropdown/Dropdown_v1/Dropdown.module.css",
+    "src/shared/ui/selects/dropdown/Dropdown_v2/DropdownSearch.module.css",
   );
 
   const codeSvg = await readContentFile(
-    "src/shared/ui/selects/dropdown/Dropdown_v1/svg/ArrowIcon.tsx",
+    "src/shared/ui/selects/dropdown/Dropdown_v2/svg/ArrowIcon.tsx",
   );
 
   return (
     <article className="article__page">
-      <h1>{"Dropdown v1"}</h1>
+      <h1>{"Dropdown search"}</h1>
       <InfoBlock
         title="Описание"
         infoList={[
@@ -47,8 +50,11 @@ export default async function DropdownV1Page() {
       <InfoBlock
         title="Структура файлов"
         infoList={[
-          { label: "Dropdown.tsx", value: "Dropdown.tsx" },
-          { label: "Dropdown.module.css", value: "Dropdown.module.css" },
+          { label: "DropdownSearch.tsx", value: "DropdownSearch.tsx" },
+          {
+            label: "DropdownSearch.module.css",
+            value: "DropdownSearch.module.css",
+          },
           { label: "svg/ArrowIcon.tsx", value: "svg/ArrowIcon.tsx" },
         ]}
       />
@@ -61,7 +67,7 @@ export default async function DropdownV1Page() {
               "{ value: string; label: string }[] - массив опций для выбора, каждая из которых имеет значение и отображаемую метку",
           },
           {
-            label: "onChange",
+            label: "onSelectMenu",
             value:
               "(value: string) => void - функция обратного вызова, вызываемая при выборе опции",
           },
@@ -84,18 +90,34 @@ export default async function DropdownV1Page() {
             label: "disabled?",
             value: "флаг, определяющий, отключен ли компонент",
           },
+          {
+            label: "inputValue",
+            value: "значение поиска",
+          },
+          {
+            label: "onChangeValue",
+            value: "изменить строку поиска",
+          },
         ]}
       />
 
-      <DropDownWrapperV1 />
+      <DropdownSearchWrapper />
+
+      {typeof wrapperTsx === "string" && (
+        <CodeWrapper
+          fileName="DropdownSearchWrapper.tsx"
+          title="TSX"
+          code={wrapperTsx}
+        />
+      )}
 
       {typeof codeTsx === "string" && (
-        <CodeWrapper fileName="Dropdown.tsx" title="TSX" code={codeTsx} />
+        <CodeWrapper fileName="DropdownSearch.tsx" title="TSX" code={codeTsx} />
       )}
 
       {typeof codeCss === "string" && (
         <CodeWrapper
-          fileName="Dropdown.module.css"
+          fileName="DropdownSearch.module.css"
           title="CSS"
           code={codeCss}
         />

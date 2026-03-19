@@ -6,6 +6,7 @@ import { WeekCalendarLine } from "@/src/shared/ui/selects/WeekCalendarLine/WeekC
 import { CalendarWrapperV1 } from "@/src/views/CalendarWrapper/CalendarWrapperV1";
 import { CalendarWrapperV2 } from "@/src/views/CalendarWrapper/CalendarWrapperV2";
 import { DropDownWrapperV1 } from "@/src/views/DropDownWrapper/DropDownWrapperV1";
+import { DropdownSearchWrapper } from "@/src/views/DropdownSearchWrapper/DropdownSearchWrapper";
 import { TimeSelectContainer } from "@/src/views/TimeSelectContainer/TimeSelectContainer";
 
 export const metadata: Metadata = generateMetadata({
@@ -58,6 +59,12 @@ export default function SelectPage() {
         </Button>
       </Link>
       <DropDownWrapperV1 />
+      <Link href={"/components/select/dropdown-search"}>
+        <Button variantColor="blue" variant="link">
+          {"Dropdown search"}
+        </Button>
+      </Link>
+      <DropdownSearchWrapper />
     </article>
   );
 }
