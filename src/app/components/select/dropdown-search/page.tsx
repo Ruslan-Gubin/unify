@@ -21,7 +21,7 @@ export const metadata: Metadata = generateMetadata({
 
 export default async function DropdownSearchPage() {
   const wrapperTsx = await readContentFile(
-    "src/views/DropdownSearchWrapper/DropDownSearchWrapper.tsx",
+    "src/views/DropdownSearchWrapper/DropdownSearchWrapper.tsx",
   );
   const codeTsx = await readContentFile(
     "src/shared/ui/selects/dropdown/Dropdown_v2/DropdownSearch.tsx",
