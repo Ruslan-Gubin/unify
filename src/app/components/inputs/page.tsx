@@ -4,6 +4,7 @@ import { generateMetadata } from "@/src/app/core/generateMetadata";
 import { Button } from "@/src/shared/ui/buttons/button_v1/Button";
 import { Input as InputV1 } from "@/src/shared/ui/inputs/Input_v1/Input";
 import { Input as InputV2 } from "@/src/shared/ui/inputs/Input_v2/Input";
+import { TextAreaResizeWrapper } from "@/src/views/TextAreaResizeWrapper/TextAreaResizeWrapper";
 
 export const metadata: Metadata = generateMetadata({
   title: "Поля ввода - My UI Kit",
@@ -67,6 +68,12 @@ export default function InputsPage() {
         </Button>
       </Link>
       <InputV2 name="title" label="Название" placeholder="Введите название" />
+      <Link href={"/components/inputs/textarea-resize"}>
+        <Button variantColor="blue" variant="link">
+          {"TextAreaResize"}
+        </Button>
+      </Link>
+      <TextAreaResizeWrapper />
     </article>
   );
 }

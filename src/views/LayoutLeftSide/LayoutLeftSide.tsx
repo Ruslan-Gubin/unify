@@ -81,6 +81,12 @@ export const LayoutLeftSide = () => {
               icon: "",
               children: [],
             },
+            {
+              label: "TextAreaResize",
+              href: "/components/inputs/textarea-resize",
+              icon: "",
+              children: [],
+            },
           ],
         },
         {

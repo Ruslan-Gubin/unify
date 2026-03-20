@@ -1,0 +1,112 @@
+.textareaElement {
+  width: 100%;
+  min-height: 19px;
+  max-height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #14212e;
+  outline: none;
+  line-height: 19px;
+  padding-block: 1px;
+}
+
+.inputContainer {
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  text-align: start;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 47px;
+  padding-top: 20px;
+  padding-inline: 12px;
+}
+
+.inputContainer:disabled {
+  opacity: 0.6;
+}
+
+.inputContainerError {
+  border: 1px solid #ff6262;
+  background-color: #f4f4f4;
+}
+
+.input::placeholder {
+  color: #727272;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+  color: #727272;
+}
+
+.label {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 600;
+  color: #727272;
+  line-height: 22px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.1s linear;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 24px);
+}
+
+.labelActive {
+  font-size: 14px;
+  font-weight: 400;
+  color: #727272;
+  line-height: 16px;
+  left: 12px;
+  top: 4px;
+  transform: translateY(0%);
+}
+
+.inputContainer:focus-within .label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #727272;
+  line-height: 16px;
+  left: 12px;
+  top: 4px;
+  transform: translateY(0%);
+}
+
+@media (max-width: 639px) {
+  .textareaElement {
+    line-height: 17px;
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  .labelActive {
+    font-size: 12px;
+    line-height: 14px;
+    top: 8px;
+  }
+
+  .inputContainer:focus-within .label {
+    font-size: 12px;
+    line-height: 14px;
+    top: 8px;
+  }
+
+  .inputActive {
+    padding-top: 26px;
+  }
+
+  .input:focus {
+    padding-top: 26px;
+  }
+}
