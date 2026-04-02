@@ -8,6 +8,11 @@
   outline: none;
   line-height: 19px;
   padding-block: 1px;
+  background-color: #f9fafb;
+
+  h1 {
+    background-color: #f9fafb;
+  }
 }
 
 .inputContainer {

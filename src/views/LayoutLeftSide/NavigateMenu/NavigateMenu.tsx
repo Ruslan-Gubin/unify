@@ -6,6 +6,7 @@ import type { NavigateListItem } from "../LayoutLeftSide";
 import { getInitSelect } from "./helpers";
 import styles from "./NavigateMenu.module.css";
 import { BirdSelectIcon } from "./svg/BirdSelectIcon";
+import { menuAdapter } from "@/src/stores/menu/store/adapter";
 
 type Props = {
   navigateList: NavigateListItem[];
@@ -17,16 +18,24 @@ export const NavigateMenu = (props: Props) => {
   const [selected, setSelected] = useState<string[]>([]);
   const [prevPathname, setPrevPathname] = useState<string | null>(null);
 
-  const handleClickSelect = (href: string, pathname: string) => {
-    const isSelect = selected.includes(href);
-    const updateSelect = !(href === pathname && isSelect);
+  const handleClickSelect = (
+    hasChildren: boolean,
+    href: string,
+    pathname: string,
+  ) => {
+    if (hasChildren) {
+      const isSelect = selected.includes(href);
+      const updateSelect = !(href === pathname && isSelect);
 
-    if (isSelect !== updateSelect) {
-      setSelected((prev) =>
-        prev.includes(href)
-          ? prev.filter((el) => el !== href)
-          : [...prev, href],
-      );
+      if (isSelect !== updateSelect) {
+        setSelected((prev) =>
+          prev.includes(href)
+            ? prev.filter((el) => el !== href)
+            : [...prev, href],
+        );
+      }
+    } else {
+      menuAdapter.toggleMenu(false);
     }
   };
 
@@ -73,8 +82,11 @@ export const NavigateMenu = (props: Props) => {
                     : styles.navigateMenuItemLink
                 }
                 onClick={() =>
-                  item.children.length > 0 &&
-                  handleClickSelect(item.href, pathname)
+                  handleClickSelect(
+                    item.children.length > 0,
+                    item.href,
+                    pathname,
+                  )
                 }
               >
                 {item.icon}

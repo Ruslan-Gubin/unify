@@ -1,4 +1,4 @@
-.header__wrapper {
+.headerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,3 +6,8 @@
   padding-inline: var(--padding-main);
 }
 
+.headerLeftSide {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}

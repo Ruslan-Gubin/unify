@@ -17,6 +17,8 @@
   --spectrum-gray-100: #1d1d1d;
   --media-screen-md: 880px;
   --media-screen-sm: 500px;
+  --header-mobile-menu-transform: translateX(-100%);
+  --header-mobile-menu-transition: transform 0s linear;
   color-scheme: light;
 }
 

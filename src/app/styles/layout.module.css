@@ -16,11 +16,12 @@
   border-right: 1px solid lightgray;
 
   @media (max-width: 880px) {
-    transition: transform 0.3s linear;
-    top: var(--header-size-height); /* 60px */
+    transition: var(--header-mobile-menu-transition);
+    top: var(--header-size-height);
     position: fixed;
-    transform: translateX(-100%);
+    transform: var(--header-mobile-menu-transform);
     z-index: 1;
+    width: 100vw;
   }
 }
 
@@ -33,7 +34,8 @@
 }
 
 .layoutHeader {
-  height: var(--header-size-height); /* 60px */
+  height: var(--header-size-height);
+  /* 60px */
   position: sticky;
   top: 0;
   left: 0;
@@ -43,6 +45,7 @@
 }
 
 .layoutMain {
-  padding: var(--padding-main); /* 32px */
+  padding: var(--padding-main);
+  /* 32px */
   background-color: "orange";
 }
